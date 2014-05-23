@@ -1,0 +1,64 @@
+body
+  font-family: text-font
+  font-size: 14px
+
+.header
+  background rgba(0,0,0,0.6)
+  padding 1em
+  z-index 0
+  position relative
+  clearfix()
+
+.main-image
+  background-image url('../images/fdr.jpg')
+  height 646px
+  margin-top -73px
+  width 100%
+  background-size cover
+  z-index 0
+
+
+h1
+  font-family header-font
+  font-weight 700
+  margin 0
+
+.logo
+  float left
+  a
+    color flat-clouds
+    background: black
+    text-decoration none
+    padding 0.175em
+    font-size 1.3em
+    box-sizing border-box
+    transition all 300ms
+    &:hover
+      width 240px
+      .full-name
+        opacity 1
+        letter-spacing: 0
+      .last-name
+        margin-left 0
+
+.full-name
+  opacity 0
+  letter-spacing: -30px
+  transition all 300ms
+
+.last-name
+  opacity 0.6
+  transition all 300ms
+  transform translate3d(0,0,0)
+  margin-left -14px
+  position relative
+
+//Nav
+nav
+  position relative
+  float right
+.nav
+  li
+    display inline-block
+  a
+    color flat-clouds

@@ -200,25 +200,238 @@ td,
 th {
   padding: 0;
 }
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/all_fonts/lato-lig-webfont.eot");
+  src: url("../fonts/all_fonts/lato-lig-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/lato-lig-webfont.woff") format('woff'), url("../fonts/all_fonts/lato-lig-webfont.ttf") format('truetype'), url("../fonts/all_fonts/lato-lig-webfont.svg#latolight") format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/all_fonts/lato-ligita-webfont.eot");
+  src: url("../fonts/all_fonts/lato-ligita-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/lato-ligita-webfont.woff") format('woff'), url("../fonts/all_fonts/lato-ligita-webfont.ttf") format('truetype'), url("../fonts/all_fonts/lato-ligita-webfont.svg#latolight_italic") format('svg');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/all_fonts/lato-reg-webfont.eot");
+  src: url("../fonts/all_fonts/lato-reg-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/lato-reg-webfont.woff") format('woff'), url("../fonts/all_fonts/lato-reg-webfont.ttf") format('truetype'), url("../fonts/all_fonts/lato-reg-webfont.svg#latoregular") format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/all_fonts/lato-regita-webfont.eot");
+  src: url("../fonts/all_fonts/lato-regita-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/lato-regita-webfont.woff") format('woff'), url("../fonts/all_fonts/lato-regita-webfont.ttf") format('truetype'), url("../fonts/all_fonts/lato-regita-webfont.svg#latoitalic") format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/all_fonts/lato-bla-webfont.eot");
+  src: url("../fonts/all_fonts/lato-bla-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/lato-bla-webfont.woff") format('woff'), url("../fonts/all_fonts/lato-bla-webfont.ttf") format('truetype'), url("../fonts/all_fonts/lato-bla-webfont.svg#latoblack") format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/all_fonts/lato-blaita-webfont.eot");
+  src: url("../fonts/all_fonts/lato-blaita-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/lato-blaita-webfont.woff") format('woff'), url("../fonts/all_fonts/lato-blaita-webfont.ttf") format('truetype'), url("../fonts/all_fonts/lato-blaita-webfont.svg#latoblack_italic") format('svg');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/all_fonts/lato-bol-webfont.eot");
+  src: url("../fonts/all_fonts/lato-bol-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/lato-bol-webfont.woff") format('woff'), url("../fonts/all_fonts/lato-bol-webfont.ttf") format('truetype'), url("../fonts/all_fonts/lato-bol-webfont.svg#latobold") format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/all_fonts/lato-bolita-webfont.eot");
+  src: url("../fonts/all_fonts/lato-bolita-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/lato-bolita-webfont.woff") format('woff'), url("../fonts/all_fonts/lato-bolita-webfont.ttf") format('truetype'), url("../fonts/all_fonts/lato-bolita-webfont.svg#latobold_italic") format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/all_fonts/lato-hai-webfont.eot");
+  src: url("../fonts/all_fonts/lato-hai-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/lato-hai-webfont.woff") format('woff'), url("../fonts/all_fonts/lato-hai-webfont.ttf") format('truetype'), url("../fonts/all_fonts/lato-hai-webfont.svg#latohairline") format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/all_fonts/lato-haiita-webfont.eot");
+  src: url("../fonts/all_fonts/lato-haiita-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/lato-haiita-webfont.woff") format('woff'), url("../fonts/all_fonts/lato-haiita-webfont.ttf") format('truetype'), url("../fonts/all_fonts/lato-haiita-webfont.svg#latohairline_italic") format('svg');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'inconsolata';
+  src: url("../fonts/all_fonts/inconsolata-webfont.eot");
+  src: url("../fonts/all_fonts/inconsolata-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/inconsolata-webfont.woff") format('woff'), url("../fonts/all_fonts/inconsolata-webfont.ttf") format('truetype'), url("../fonts/all_fonts/inconsolata-webfont.svg#inconsolatamedium") format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gentium';
+  src: url("../fonts/all_fonts/genbasb-webfont.eot");
+  src: url("../fonts/all_fonts/genbasb-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/genbasb-webfont.woff") format('woff'), url("../fonts/all_fonts/genbasb-webfont.ttf") format('truetype'), url("../fonts/all_fonts/genbasb-webfont.svg#gentium_basicbold") format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gentium';
+  src: url("../fonts/all_fonts/genbasbi-webfont.eot");
+  src: url("../fonts/all_fonts/genbasbi-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/genbasbi-webfont.woff") format('woff'), url("../fonts/all_fonts/genbasbi-webfont.ttf") format('truetype'), url("../fonts/all_fonts/genbasbi-webfont.svg#gentium_basicbold_italic") format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'gentium';
+  src: url("../fonts/all_fonts/genbasi-webfont.eot");
+  src: url("../fonts/all_fonts/genbasi-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/genbasi-webfont.woff") format('woff'), url("../fonts/all_fonts/genbasi-webfont.ttf") format('truetype'), url("../fonts/all_fonts/genbasi-webfont.svg#gentium_basicitalic") format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'gentium';
+  src: url("../fonts/all_fonts/genbasr-webfont.eot");
+  src: url("../fonts/all_fonts/genbasr-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/genbasr-webfont.woff") format('woff'), url("../fonts/all_fonts/genbasr-webfont.ttf") format('truetype'), url("../fonts/all_fonts/genbasr-webfont.svg#gentium_basicregular") format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gentium_book';
+  src: url("../fonts/all_fonts/genbkbasb-webfont.eot");
+  src: url("../fonts/all_fonts/genbkbasb-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/genbkbasb-webfont.woff") format('woff'), url("../fonts/all_fonts/genbkbasb-webfont.ttf") format('truetype'), url("../fonts/all_fonts/genbkbasb-webfont.svg#gentium_book_basicbold") format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gentium_book';
+  src: url("../fonts/all_fonts/genbkbasbi-webfont.eot");
+  src: url("../fonts/all_fonts/genbkbasbi-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/genbkbasbi-webfont.woff") format('woff'), url("../fonts/all_fonts/genbkbasbi-webfont.ttf") format('truetype'), url("../fonts/all_fonts/genbkbasbi-webfont.svg#gentium_book_basicbold_italic") format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'gentium_book';
+  src: url("../fonts/all_fonts/genbkbasi-webfont.eot");
+  src: url("../fonts/all_fonts/genbkbasi-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/genbkbasi-webfont.woff") format('woff'), url("../fonts/all_fonts/genbkbasi-webfont.ttf") format('truetype'), url("../fonts/all_fonts/genbkbasi-webfont.svg#gentium_book_basicitalic") format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'gentium_book';
+  src: url("../fonts/all_fonts/genbkbasr-webfont.eot");
+  src: url("../fonts/all_fonts/genbkbasr-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/all_fonts/genbkbasr-webfont.woff") format('woff'), url("../fonts/all_fonts/genbkbasr-webfont.ttf") format('truetype'), url("../fonts/all_fonts/genbkbasr-webfont.svg#gentium_book_basicregular") format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: 'Gentium Book Basic';
+  font-size: 14px;
+}
+.header {
+  background: rgba(0,0,0,0.6);
+  padding: 1em;
+  z-index: 0;
+  position: relative;
+  zoom: 1;
+}
+.header:before,
+.header:after {
+  content: "";
+  display: table;
+}
+.header:after {
+  clear: both;
+}
+.main-image {
+  background-image: url("../images/fdr.jpg");
+  height: 646px;
+  margin-top: -73px;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  z-index: 0;
+}
+h1 {
+  font-family: 'Lato';
+  font-weight: 700;
+  margin: 0;
+}
+.logo {
+  float: left;
+}
 .logo a {
-  color: #666;
+  color: #ecf0f1;
+  background: #000;
   text-decoration: none;
-}
-.full-name {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-}
-.last-name {
+  padding: 0.175em;
+  font-size: 1.3em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   -o-transition: all 300ms;
   -ms-transition: all 300ms;
   transition: all 300ms;
-  -webkit-transform: translate3d(-97px, 0, 0);
-  -moz-transform: translate3d(-97px, 0, 0);
-  -o-transform: translate3d(-97px, 0, 0);
-  -ms-transform: translate3d(-97px, 0, 0);
-  transform: translate3d(-97px, 0, 0);
-  position: absolute;
+}
+.logo a:hover {
+  width: 240px;
+}
+.logo a:hover .full-name {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  letter-spacing: 0;
+}
+.logo a:hover .last-name {
+  margin-left: 0;
+}
+.full-name {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  letter-spacing: -30px;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  -ms-transition: all 300ms;
+  transition: all 300ms;
+}
+.last-name {
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  -ms-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  margin-left: -14px;
+  position: relative;
+}
+nav {
+  position: relative;
+  float: right;
+}
+.nav li {
+  display: inline-block;
+}
+.nav a {
+  color: #ecf0f1;
 }
