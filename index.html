@@ -3,12 +3,14 @@
 <head>
   <title>Ashton Harris</title>
   <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
   <script type="text/javascript" src="scripts/app.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/app.css">
 </head>
 <body ng-controller="AppController as app">
   <header>
     <div class="header">
+      <div class="icon">A</div>
       <h1 class="logo">
         <a href="#">
           <span class="first-name">
@@ -19,18 +21,19 @@
           </span>
         </a>
       </h1>
-      <nav>
+      <menu>
         <ul class="nav">
-          <li><a href="">Work</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Hire Me</a></li>
+          <li><a href="#/work">Work</a></li>
+          <li><a href="#/about">About</a></li>
+          <li><a href="#/contact">Contact</a></li>
         </ul>
-      </nav>
+      </menu>
     </div>
     <div class="main-image"></div>
   </header>
   <main>
-    <div class="content"></div>
+    <div ng-view class="content">
+    </div>
   </main>
 </body>
 </html>
