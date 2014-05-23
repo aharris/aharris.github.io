@@ -1,5 +1,5 @@
 body
-  font-family: text-font
+  font-family text-font
   font-size: 14px
   background: background-color
 
@@ -18,7 +18,7 @@ body
   width 60px
   height 60px
   background-color accent-1
-  color: #fff
+  color #fff
   border-radius 60px
   font-size 67px
   font-weight 100
@@ -28,7 +28,6 @@ body
   float left
 
 .logo
-  // margin: 0
   float left
   a
     color light-text
@@ -43,5 +42,27 @@ menu
 .nav
   li
     display inline-block
+    margin-right: 1em
+    text-align center
+    &.active
+      &:before
+        position absolute
+        width 8px
+        height 8px
+        background accent-2
+        content " "
+        border-radius 8px
+        margin-left -4px
+        top 6px
+      a
+        text-align center
+        font-weight 500
+        color accent-2
   a
-    // color flat-clouds
+    display block
+    color light-text
+    text-decoration none
+    font-weight 200
+    transition color 300ms
+    &:hover
+      color accent-2

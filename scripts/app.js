@@ -2,9 +2,16 @@
 
   var app = angular.module('app', ['ngRoute']);
 
-  app.controller('AppController', function(){
+  app.controller('AppController', ['$scope', '$location', function($scope, $location){
     // this.title = "Ashton Harris";
-  });
+    $scope.getClass = function(path) {
+      if ($location.path().substr(0, path.length) == path) {
+        return "active";
+      } else {
+        return "";
+      }
+    };
+  }]);
 
   app.config(['$routeProvider', function($routeProvider){
     $routeProvider

@@ -388,4 +388,36 @@ menu {
 }
 .nav li {
   display: inline-block;
+  margin-right: 1em;
+  text-align: center;
+}
+.nav li.active:before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #c13f59;
+  content: " ";
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  margin-left: -4px;
+  top: 6px;
+}
+.nav li.active a {
+  text-align: center;
+  font-weight: 500;
+  color: #c13f59;
+}
+.nav a {
+  display: block;
+  color: #acacac;
+  text-decoration: none;
+  font-weight: 200;
+  -webkit-transition: color 300ms;
+  -moz-transition: color 300ms;
+  -o-transition: color 300ms;
+  -ms-transition: color 300ms;
+  transition: color 300ms;
+}
+.nav a:hover {
+  color: #c13f59;
 }
