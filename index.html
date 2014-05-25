@@ -2,22 +2,21 @@
 <html ng-app="app">
 <head>
   <title>Ashton Harris</title>
-  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
-  <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
-  <script type="text/javascript" src="scripts/app.js"></script>
   <link rel="stylesheet" type="text/css" href="styles/app.css">
 </head>
 <body ng-controller="AppController as app">
   <header>
-    <div class="header">
-      <div class="icon">A</div>
+    <div class="header wrapper">
       <h1 class="logo">
-        <a href="#">
-          <span class="first-name">
-            A<span class="full-name">shton</span>
-          </span>
-          <span class="last-name">
-            H<span class="full-name">arris</span>
+        <a href="/">
+          <span class="icon">A</span>
+          <span class="name">
+            <span class="first-name">
+              A<span class="full-name">shton</span>
+            </span>
+            <span class="last-name">
+              H<span class="full-name">arris</span>
+            </span>
           </span>
         </a>
       </h1>
@@ -29,11 +28,22 @@
         </ul>
       </menu>
     </div>
-    <div class="main-image"></div>
+    <hr/>
+    <div class="image-area">
+      <div class="main-image wrapper">
+        <h2>Front-end Developer<br/>/ Web Designer</h2>
+      </div>
+    </div>
+    <hr/>
   </header>
   <main>
-    <div ng-view class="content">
+    <div ng-view class="content wrapper">
     </div>
   </main>
+
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="scripts/app.js"></script>
+  <script type="text/javascript" src="scripts/routes.js"></script>
 </body>
 </html>

@@ -338,9 +338,21 @@ body {
   font-size: 14px;
   background: #fff;
 }
+hr {
+  margin: 0;
+  color: #bdc3c7;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.content {
+  padding: 1em;
+}
 .header {
   background: rgba(255,255,255,0.6);
   padding: 1em 1em 0;
+  text-align: center;
   zoom: 1;
 }
 .header:before,
@@ -350,14 +362,6 @@ body {
 }
 .header:after {
   clear: both;
-}
-.main-image {
-  background-image: url("../images/fdr.jpg");
-  height: 420px;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
 }
 .icon {
   width: 60px;
@@ -371,10 +375,21 @@ body {
   font-style: italic;
   line-height: 0.7;
   text-indent: 11px;
-  float: left;
+  display: inline-block;
+}
+@media screen and (min-width: 1200px) {
+  .icon {
+    float: left;
+  }
 }
 .logo {
-  float: left;
+  margin: 0 0 1em;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin: 0;
+    float: left;
+  }
 }
 .logo a {
   color: #acacac;
@@ -382,9 +397,26 @@ body {
   font-weight: 100;
   font-style: italic;
 }
+.name {
+  display: block;
+  white-space: nowrap;
+}
+@media screen and (min-width: 1200px) {
+  .name {
+    margin-top: 23px;
+  }
+}
 menu {
+  padding: 0;
   position: relative;
-  float: right;
+}
+@media screen and (min-width: 1200px) {
+  menu {
+    float: right;
+  }
+}
+.nav {
+  padding: 0;
 }
 .nav li {
   display: inline-block;
@@ -400,7 +432,12 @@ menu {
   -webkit-border-radius: 8px;
   border-radius: 8px;
   margin-left: -4px;
-  top: 6px;
+  top: -8px;
+}
+@media screen and (min-width: 1200px) {
+  .nav li.active:before {
+    top: 6px;
+  }
 }
 .nav li.active a {
   text-align: center;
@@ -420,4 +457,61 @@ menu {
 }
 .nav a:hover {
   color: #c13f59;
+}
+h2 {
+  margin: 0;
+  color: #fff;
+  text-align: right;
+  padding: 0.5em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+.image-area {
+  background: #2c3e50;
+  margin-top: -1px;
+}
+.main-image {
+  background: url("../images/fdr_blur.jpg") 5% 0;
+  position: relative;
+  height: 160px;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .main-image {
+    height: 420px;
+    background: -webkit-linear-gradient(left, #2c3e50, rgba(44,62,80,0) 10%), -webkit-linear-gradient(right, #2c3e50, rgba(44,62,80,0) 10%), url("../images/fdr_blur.jpg");
+    background: -moz-linear-gradient(left, #2c3e50, rgba(44,62,80,0) 10%), -moz-linear-gradient(right, #2c3e50, rgba(44,62,80,0) 10%), url("../images/fdr_blur.jpg");
+    background: -o-linear-gradient(left, #2c3e50, rgba(44,62,80,0) 10%), -o-linear-gradient(right, #2c3e50, rgba(44,62,80,0) 10%), url("../images/fdr_blur.jpg");
+    background: -ms-linear-gradient(left, #2c3e50, rgba(44,62,80,0) 10%), -ms-linear-gradient(right, #2c3e50, rgba(44,62,80,0) 10%), url("../images/fdr_blur.jpg");
+    background: linear-gradient(to right, #2c3e50, rgba(44,62,80,0) 10%), linear-gradient(to left, #2c3e50, rgba(44,62,80,0) 10%), url("../images/fdr_blur.jpg");
+  }
+}
+h3 {
+  font-family: 'ostrich_sans';
+  color: #c13f59;
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+.thumbs {
+  list-style: none;
+  padding: 0;
+}
+.thumb {
+  border: 1px solid #bdc3c7;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.2em;
+}
+.breathless {
+  background: #2a2d36 url("images/breathless/thumb_bg.png") repeat 0 0;
 }
