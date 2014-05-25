@@ -488,11 +488,11 @@ h2 {
 @media screen and (min-width: 1200px) {
   .main-image {
     height: 420px;
-    background: -webkit-linear-gradient(left, #2c3e50, rgba(44,62,80,0) 10%), -webkit-linear-gradient(right, #2c3e50, rgba(44,62,80,0) 10%), url("../images/fdr_blur.jpg");
-    background: -moz-linear-gradient(left, #2c3e50, rgba(44,62,80,0) 10%), -moz-linear-gradient(right, #2c3e50, rgba(44,62,80,0) 10%), url("../images/fdr_blur.jpg");
-    background: -o-linear-gradient(left, #2c3e50, rgba(44,62,80,0) 10%), -o-linear-gradient(right, #2c3e50, rgba(44,62,80,0) 10%), url("../images/fdr_blur.jpg");
-    background: -ms-linear-gradient(left, #2c3e50, rgba(44,62,80,0) 10%), -ms-linear-gradient(right, #2c3e50, rgba(44,62,80,0) 10%), url("../images/fdr_blur.jpg");
-    background: linear-gradient(to right, #2c3e50, rgba(44,62,80,0) 10%), linear-gradient(to left, #2c3e50, rgba(44,62,80,0) 10%), url("../images/fdr_blur.jpg");
+    background: -webkit-linear-gradient(left, #2c3e50, rgba(44,62,80,0) 10%), -webkit-linear-gradient(right, #2c3e50, rgba(44,62,80,0) 10%), url("../../images/fdr_blur.jpg");
+    background: -moz-linear-gradient(left, #2c3e50, rgba(44,62,80,0) 10%), -moz-linear-gradient(right, #2c3e50, rgba(44,62,80,0) 10%), url("../../images/fdr_blur.jpg");
+    background: -o-linear-gradient(left, #2c3e50, rgba(44,62,80,0) 10%), -o-linear-gradient(right, #2c3e50, rgba(44,62,80,0) 10%), url("../../images/fdr_blur.jpg");
+    background: -ms-linear-gradient(left, #2c3e50, rgba(44,62,80,0) 10%), -ms-linear-gradient(right, #2c3e50, rgba(44,62,80,0) 10%), url("../../images/fdr_blur.jpg");
+    background: linear-gradient(to right, #2c3e50, rgba(44,62,80,0) 10%), linear-gradient(to left, #2c3e50, rgba(44,62,80,0) 10%), url("../../images/fdr_blur.jpg");
   }
 }
 h3 {
@@ -515,5 +515,5 @@ h3 {
 margin-right
 }
 .breathless {
-  background: #2a2d36 url("images/breathless/thumb_bg.png") repeat 0 0;
+  background: #2a2d36 url("../../images/breathless/thumb_bg.png") repeat 0 0;
 }
