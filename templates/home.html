@@ -1,5 +1,5 @@
 <h3>Featured Work</h3>
 
 <ul class="thumbs" ng-controller="workController as work">
-  <li ng-class="{{item.class}}" class="thumb" ng-repeat="item in work.items">Client: {{item.client}}</li>
+  <li class="thumb {{item.class}}" ng-repeat="item in work.items">Client: {{item.client}}</li>
 </ul>
