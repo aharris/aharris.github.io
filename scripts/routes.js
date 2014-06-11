@@ -12,6 +12,10 @@
         templateUrl : 'templates/work.html',
         controller: 'AppController'
       })
+      .when('/work/:workRoute', {
+        templateUrl : 'templates/work_details.html',
+        controller: 'AppController'
+      })
       .when('/about', {
         templateUrl : 'templates/about.html',
         controller: 'AppController'
