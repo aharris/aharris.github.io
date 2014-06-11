@@ -33,4 +33,12 @@
 
   }]);
 
+  app.controller('DetailsController', ['$scope', '$location', 'filterFilter', 'Work', function ($scope, $location, filterFilter, Work) {
+    Work.then(function (res) {
+      $scope.app.items = res;
+      $scope.app.currentItem = filterFilter($scope.app.items, { 'route' : $location.$$path.substr(1) })[0];
+    });
+
+  }]);
+
 })();

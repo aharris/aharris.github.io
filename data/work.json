@@ -1,6 +1,6 @@
 [
   {
-    "client" : "Breahless Resorts & Spas",
+    "client" : "Breathless Resorts & Spas",
     "class": "breathless",
     "route": "breathless",
     "projectType" : "mobile",
@@ -12,7 +12,7 @@
   },
   {
     "client" : "Client2",
-    "class": "breathless",
+    "class": "la",
     "route": "foo",
     "projectType" : "mobile",
     "details" : "foo lala",
@@ -23,7 +23,7 @@
   },
   {
     "client" : "client3",
-    "class": "breathless",
+    "class": "la",
     "route": "bar",
     "projectType" : "mobile",
     "details" : "foo lala",
@@ -34,7 +34,7 @@
   },
   {
     "client" : "Client4",
-    "class": "breathless",
+    "class": "la",
     "route": "foobar",
     "projectType" : "mobile",
     "details" : "foo lala",

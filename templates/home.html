@@ -2,6 +2,6 @@
 
 <ul class="thumbs" ng-controller="AppController as app">
   <li class="thumb {{item.class}}" ng-repeat="item in app.items">
-    <a href="#/work/{{item.route}}">Client: {{item.client}}</a>
+    <a href="#/{{item.route}}">{{item.client}}</a>
   </li>
 </ul>
