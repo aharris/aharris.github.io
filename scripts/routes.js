@@ -10,7 +10,11 @@
       })
       .when('/work', {
         templateUrl : 'templates/work.html',
-        controller: 'AppController'
+        controller: 'AppController',
+        animations: {
+          enter: 'enter-bottom',
+          leave: 'leave-bottom'
+        }
       })
       .when('/:workRoute', {
         templateUrl : 'templates/work_details.html',
