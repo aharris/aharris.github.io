@@ -1,3 +1,12 @@
 <!-- <div ng-animate=" 'animate' "> -->
-    Work it out
+    <!-- Work it out -->
 <!-- </div> -->
+<div class="content">
+  <h3>Featured Work</h3>
+
+  <ul class="thumbs" ng-controller="AppController as app">
+    <li class="thumb {{item.class}}" ng-repeat="item in app.items">
+      <a href="#/{{item.route}}">{{item.client}}</a>
+    </li>
+  </ul>
+</div>
