@@ -2,12 +2,14 @@
     <!-- Work it out -->
 <!-- </div> -->
 <div class="content">
-  <a href="#/">Close</a>
-  <h3>Featured Work</h3>
+  <div class="wrapper">
+    <a href="#/">Close</a>
+    <h3>Featured Work</h3>
 
-  <ul class="thumbs" ng-controller="AppController as app">
-    <li class="thumb {{item.class}}" ng-repeat="item in app.items">
-      <a href="#/{{item.route}}">{{item.client}}</a>
-    </li>
-  </ul>
+    <ul class="thumbs" ng-controller="AppController as app">
+      <li class="thumb {{item.class}}" ng-repeat="item in app.items">
+        <a href="#/{{item.route}}">{{item.client}}</a>
+      </li>
+    </ul>
+  </div>
 </div>

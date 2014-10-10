@@ -6,7 +6,11 @@
     $routeProvider
       .when('/', {
         templateUrl : 'templates/home.html',
-        controller: 'AppController'
+        controller: 'AppController',
+        animations: {
+          enter: 'fade',
+          leave: 'fade'
+        }
       })
       .when('/work', {
         templateUrl : 'templates/work.html',
