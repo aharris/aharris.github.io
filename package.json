@@ -12,6 +12,7 @@
     "karma-firefox-launcher": "^0.1.3",
     "karma-jasmine": "^0.1.5",
     "protractor": "~0.20.1",
+    "rupture": "^0.4.0",
     "shelljs": "^0.2.6"
   },
   "scripts": {

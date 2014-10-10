@@ -17,23 +17,32 @@ hr
 .wrapper
   max-width 1400px
   margin 0 auto
-  padding 0 40px
+  padding 0 15px
+  +above(768px)
+    padding 0 40px
 
 .content
   background #fff
   height 100%
 
 //HEADER
+
 .header
-  padding-top 2em
+  padding-top 15px
   clearfix()
+  +below(479px)
+    text-align center
+  +above(768px)
+    padding-top 2em
 
 //LOGO
 .logo
   margin 0 0 1em
   opacity .9
   font-family logo-font
-  @media screen and (min-width: 768px)
+  &:hover
+    opacity 1
+  @media screen and (min-width: 480px)
     margin 0
     float left
   a
@@ -44,18 +53,22 @@ hr
 .tag-line
   display block
   font-family header-font
-  font-size 14px
+  font-size 10px
   opacity .6
   text-transform uppercase
   margin-top -7px
+  +above(768px)
+    font-size 14px
 
 //Nav
 menu
   padding 0
+  margin 0
   position relative
-  @media screen and (min-width: 768px)
+  @media screen and (min-width: 480px)
     float right
 .nav
+  text-align center
   padding 0
   font-family header-font
   margin 0
@@ -81,16 +94,21 @@ menu
 //Symbol
 .symbol
   font-family symbol-font
-  font-size 272px
+  font-size 100px
   opacity .2
   color #fff
-  letter-spacing -62px
+  letter-spacing -22px
   position absolute
   tranform-style preserve-3d
   top 50%
   left 50%
   transform translate(-50%, -50%)
   width 280px
+  text-align center
+  +above(768px)
+    font-size 272px
+    letter-spacing -22px
+
 
 
 .image-area
@@ -120,13 +138,12 @@ h3
 
 .view-animate
   position relative
-  transition all 1s
+  transition all 100s
   height 100%
 
 
 .view-animate.ng-enter, .view-animate.ng-leave
   transition all 1s
-
   display block
   width 100%
 
@@ -139,20 +156,21 @@ h3
 
 
 .view-animate.ng-enter.enter-bottom
-  top 100%
+  transform translate3d(0,100%,0)
 
 .view-animate.ng-enter.enter-bottom.ng-enter-active
-  top 0
+  transform: translate3d(0,0%,0)
 
 .view-animate.ng-leave.leave-bottom.ng-leave-active
-  top 100%
+  transform translate3d(0,100%,0)
 
 //FOOTER
 footer
   position absolute
   width 100%
   text-align center
-  bottom 40px
+  bottom 15px
+
 
 .footer
   position relative

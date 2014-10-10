@@ -9,8 +9,23 @@
     display inline-block
     vertical-align top
     opacity .6
+    width 46px
+    height 74px
+    overflow hidden
+    margin 0 10px
+    +above(768px)
+        width 80px
+        height 80px
+        margin 20px
+
     &:hover
         opacity 1
+
+
+.svg_long_shadow
+    width 80px
+    +above(768px)
+        width 134px
 
 /*Genral*/
 .flat-line .icon > path {
@@ -598,12 +613,6 @@
 /*=============================================
 [ Inactive Styles ]
 ==============================================*/
-.social-line {
-    display: inline-block;
-    width: 134px;
-    height: 138px;
-    margin: 20px;
-}
 .social-line:hover { cursor: pointer }
 /* Gradient Offsets */
 .offset0 {
@@ -633,11 +642,6 @@
 .offset6 {
     stop-color: #000000;
     stop-opacity: 0.1106;
-}
-.social-line {
-    width: 80px;
-    height: 80px;
-    overflow: hidden;
 }
 .social-line .icon_circle_shadow {
     fill: none;
