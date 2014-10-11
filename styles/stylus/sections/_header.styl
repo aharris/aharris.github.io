@@ -1,0 +1,70 @@
+//HEADER
+header
+  float left
+  position relative
+  width 100%
+  z-index 3
+
+.header
+  padding-top 15px
+  clearfix()
+  +below(479px)
+    text-align center
+  +above(768px)
+    margin-bottom 15px
+    padding-top 2em
+
+//LOGO
+.logo
+  margin 0 0 1em
+  opacity .9
+  font-family logo-font
+  &:hover
+    opacity 1
+  @media screen and (min-width: 480px)
+    margin 0
+    float left
+  a
+    color light-text
+    text-decoration none
+    font-size 36px
+
+.tag-line
+  display block
+  font-family header-font
+  font-size 10px
+  opacity .6
+  text-transform uppercase
+  margin-top -7px
+  +above(768px)
+    font-size 14px
+
+//Nav
+menu
+  padding 0
+  margin 0
+  position relative
+  @media screen and (min-width: 480px)
+    float right
+.nav
+  text-align center
+  padding 0
+  font-family header-font
+  margin 0
+  li
+    display inline-block
+    margin-left 1em
+    text-align center
+    &.active
+      a
+        text-align center
+        opacity 1
+  a
+    display block
+    color light-text
+    text-decoration none
+    font-weight 200
+    transition color 300ms
+    opacity .6
+    &:hover
+      opacity 1

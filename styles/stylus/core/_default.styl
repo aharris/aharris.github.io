@@ -1,0 +1,55 @@
+//LAYOUT
+html,
+body,
+main
+  height 100%
+  position relative
+
+body
+  font-family text-font
+  font-size 14px
+  background background-color url(/images/bg_pattern.jpg)
+
+hr
+  margin 0
+  color flat-gray-2
+
+.wrapper
+  max-width 1400px
+  margin 0 auto
+  padding 0 15px
+  +above(768px)
+    padding 0 40px
+
+main
+  z-index 1
+
+.content
+  background flat-clouds
+  height 100%
+
+//Symbol
+.symbol
+  font-family symbol-font
+  font-size 100px
+  opacity .2
+  color #fff
+  letter-spacing -22px
+  position absolute
+  tranform-style preserve-3d
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+  width 280px
+  text-align center
+  +above(768px)
+    font-size 272px
+    letter-spacing -22px
+
+
+//CONTENT
+h3
+  font-family header-font
+  color accent-2
+  font-size 28px
+  margin 0 0 10px
