@@ -20,16 +20,16 @@
           leave: 'leave-bottom'
         }
       })
-      .when('/:workRoute', {
-        templateUrl : 'templates/work_details.html',
-        controller: 'AppController'
-      })
       .when('/about', {
         templateUrl : 'templates/about.html',
         controller: 'AppController'
       })
       .when('/contact', {
         templateUrl : 'templates/contact.html',
+        controller: 'AppController'
+      })
+      .when('/:workRoute', {
+        templateUrl : 'templates/work_details.html',
         controller: 'AppController'
       })
       .otherwise({
