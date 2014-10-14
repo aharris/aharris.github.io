@@ -4,4 +4,4 @@
 
 * npm start
 
-* stylus -w -u nib app.styl -o css/
+* stylus -w -u nib -u ./node_modules/rupture styles/stylus/app.styl -o styles/css/

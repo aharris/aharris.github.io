@@ -22,16 +22,28 @@
       })
       .when('/about', {
         templateUrl : 'templates/about.html',
-        controller: 'AppController'
+        controller: 'AppController',
+        animations: {
+          enter: 'enter-bottom',
+          leave: 'leave-bottom'
+        }
       })
       .when('/contact', {
         templateUrl : 'templates/contact.html',
-        controller: 'AppController'
+        controller: 'AppController',
+          animations: {
+            enter: 'enter-bottom',
+            leave: 'leave-bottom'
+          }
       })
       .when('/:workRoute', {
         templateUrl : 'templates/work_details.html',
-        controller: 'AppController'
-      })
+        controller: 'AppController',
+          animations: {
+            enter: 'enter-bottom',
+            leave: 'leave-bottom'
+          }
+        })
       .otherwise({
         redirectTo: 'templates/404.html'
       });

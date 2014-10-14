@@ -10,8 +10,12 @@
 
     <ul class="thumbs" ng-controller="AppController as app">
       <li class="thumb {{item.class}}" ng-repeat="item in app.items">
+        <img src="{{item.images.thumbnail}}" alt="">
         <a href="#/{{item.route}}">{{item.client}}</a>
       </li>
     </ul>
+
+    <h3>Full Client List</h3>
+
   </div>
 </div>

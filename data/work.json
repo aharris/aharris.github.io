@@ -6,9 +6,9 @@
     "projectType" : "mobile",
     "details" : "foo lala",
     "data" : "Feb 2012",
-    "images" : [
-      { "thumbnail" : "" }
-    ]
+    "images" : {
+      "thumbnail" : "/images/work/breathless/breathless_thumb.jpg"
+    }
   },
   {
     "client" : "Client2",
