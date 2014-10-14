@@ -10,12 +10,59 @@
 
     <ul class="thumbs" ng-controller="AppController as app">
       <li class="thumb {{item.class}}" ng-repeat="item in app.items">
-        <img src="{{item.images.thumbnail}}" alt="">
-        <a href="#/{{item.route}}">{{item.client}}</a>
+        <a href="#/{{item.route}}">
+          <div class="thumb-wrap">
+            <img src="{{item.images.logo}}" alt="{{item.client}}">
+          </div>
+          <ul class="tasks plain-list">
+            <li ng-repeat="task in item.tasks">{{task}}</li>
+          </ul>
+          <div class="view-link">View</div>
+        </a>
       </li>
     </ul>
 
     <h3>Full Client List</h3>
+
+    <ul class="clientList">
+      <li><a href="#/breathless">Breathless</a></li>
+      <li>Movitas</li>
+      <li>Nintendo</li>
+      <li>The Source</li>
+      <li>Traveler Connect</li>
+      <li>Avaya</li>
+      <li>Media Giraffes</li>
+      <li>First Key Creations</li>
+      <li>KeyLime Cove</li>
+      <li>Liberty Global</li>
+      <li>Telnet</li>
+      <li>Allin Interactive Latin America</li>
+      <li>Sports Core</li>
+      <li>The Closet Therapy</li>
+      <li>Amstar</li>
+      <li>Apple Vacations</li>
+      <li>Apple On the Go</li>
+      <li>Flamingo Beach Resort &amp; Spa</li>
+      <li>Dreams Resort and Spa</li>
+      <li>Secrets Resort and Spa</li>
+      <li>Wialan</li>
+      <li>Maritz</li>
+      <li>Psychic Source</li>
+      <li>Mobile Monday</li>
+      <li>Pocono Mountains</li>
+      <li>O'Malley's Pub'</li>
+      <li>The Shawnee Inn</li>
+      <li>Shawnee Mountain</li>
+      <li>Saint Clare's Health System</li>
+      <li>Keating's River Grill</li>
+      <li>Sheraton</li>
+      <li>Blue Mountain</li>
+      <li>Quick Chek</li>
+      <li>St. Petersburg Clearwater</li>
+      <li>Nocturnal Skate Shop</li>
+      <li>The Children's Journey</li>
+      <li>Closest Therapy</li>
+    </ul>
 
   </div>
 </div>

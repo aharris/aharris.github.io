@@ -7,8 +7,13 @@
     "details" : "foo lala",
     "data" : "Feb 2012",
     "images" : {
-      "thumbnail" : "/images/work/breathless/breathless_thumb.jpg"
-    }
+      "logo" : "/images/work/breathless/logo.png"
+    },
+    "tasks" : [
+      "UI Design",
+      "Front-End Dev",
+      "CMS Integration"
+    ]
   },
   {
     "client" : "Client2",
