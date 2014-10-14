@@ -66,8 +66,22 @@ h3
   font-family open_sansregular
   color flat-gray-3
   font-size 28px
-  margin 0 0 1em
+  margin 0 0 2em
   text-align center
+  &:before, &:after
+    content ''
+    display inline-block
+    vertical-align middle
+    width 100px
+    height 1px
+    background lighten(flat-gray-2, 50%)
+  &:before
+    margin-right 25px
+    transform rotate(-3deg)
+  &:after
+    margin-left 25px
+    transform rotate(3deg)
+
 
 
 .close
