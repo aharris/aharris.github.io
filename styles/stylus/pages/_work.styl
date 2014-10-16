@@ -117,10 +117,12 @@
   font-family header-font
 
 .client-list
-  column-count 4
+  column-count 2
   column-gap 3%
   font-size 15px
-  line-height 1.7
+  line-height 2
+  +above(768px)
+    column-count 4
 
 .main-images
   li
