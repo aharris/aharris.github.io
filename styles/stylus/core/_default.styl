@@ -16,14 +16,29 @@ img
   max-height 100%
 
 hr
-  margin 0
-  color flat-gray-2
+  margin 2em 0
+  height 1px
+  border-style none
+  background lighten(flat-gray-2, 50%)
+
+p
+  font-size 16px
+  line-height 2
+
+a
+  color flat-orange-2
+  text-decoration none
+  transition all 200ms
+
+  &:hover, $:active
+    color flat-orange-3
 
 .wrapper
   max-width 1400px
   margin 0 auto
   padding 0 15px
   position relative
+
   +above(768px)
     padding 0 40px
 
@@ -56,32 +71,45 @@ main
   transform translate(-50%, -50%)
   width 280px
   text-align center
+
   +above(768px)
     font-size 272px
-    letter-spacing -22px
+    letter-spacing -62px
 
 
 //CONTENT
-h3
+h2
   font-family open_sansregular
   color flat-gray-3
-  font-size 28px
+  font-size 20px
   margin 0 0 2em
   text-align center
-  &:before, &:after
-    content ''
-    display inline-block
-    vertical-align middle
-    width 100px
-    height 1px
-    background lighten(flat-gray-2, 50%)
-  &:before
-    margin-right 25px
-    transform rotate(-3deg)
-  &:after
-    margin-left 25px
-    transform rotate(3deg)
 
+  +below(767px)
+    padding-top 1.5em
+
+  +above(768px)
+    font-size 28px
+
+  +above(900px)
+    &:before, &:after
+      content ''
+      display inline-block
+      vertical-align middle
+      width 100px
+      height 1px
+      background lighten(flat-gray-2, 50%)
+    &:before
+      margin-right 25px
+      transform rotate(-3deg)
+    &:after
+      margin-left 25px
+      transform rotate(3deg)
+
+h3
+  text-align center
+  margin 0
+  color flat-gray-2
 
 
 .close
@@ -97,6 +125,7 @@ h3
   border-width 10px 15px 0 15px
   border-color flat-gray-3 transparent transparent transparent
   opacity .8
+
   &:hover
     border-color #007bff transparent transparent transparent
 

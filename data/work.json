@@ -6,9 +6,12 @@
     "projectType" : "mobile",
     "details" : "foo lala",
     "data" : "Feb 2012",
-    "images" : {
-      "logo" : "/images/work/breathless/logo.png"
-    },
+    "logo" : "/images/work/breathless/logo.png",
+    "images" : [
+      "/images/work/breathless/breathless1.png",
+      "/images/work/breathless/breathless2.png",
+      "/images/work/breathless/breathless3.png"
+    ],
     "tasks" : [
       "UI Design",
       "Front-End Dev",

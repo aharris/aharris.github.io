@@ -1,3 +1,36 @@
+.work-content
+  padding 3em 0
+  .publicity
+    text-align center
+    margin-bottom 5px
+    font-size 16px
+  .publicity-date
+    margin-top 0
+    text-align center
+    color flat-gray-2
+
+.quote
+  padding 40px
+  position relative
+  background lighten(flat-gray-1, 50%)
+  border-radius 10px
+  .view-article
+    display block
+    margin-top 2em
+    text-align center
+
+.quote-symbol
+  font-size 3em
+  font-family 'passionbold'
+  color flat-green-2
+  display inline-block
+  vertical-align super
+  transform scale(-1, -1)
+  position absolute
+  top 0
+  left 20px
+  line-height 1
+
 .thumbs
   list-style none
   padding 0
@@ -66,9 +99,53 @@
   font-size 15px
   font-family open_sanssemibold
 
+.view-site
+  position absolute
+  font-size 16px
+  font-family header-font
+
 .client-list
   column-count 4
   column-gap 3%
   font-size 15px
   line-height 1.7
+
+.main-images
+  li
+    text-align center
+
+
+.details
+  h2
+    margin-bottom 0
+  p
+    margin 0 auto
+    +above(768px)
+      text-align center
+      width 90%
+
+
+.tech-list
+  margin-top 2em
+  column-count 3
+  column-gap 3%
+  font-size 15px
+  line-height 3
+  color flat-green-2
+  text-align center
+
+
+//Breathless
+.breathless
+  .work-bg
+    background url('/images/breathless/thumb_bg.png')
+  .main-images
+    padding 2em
+    cf()
+    li
+      width 100%
+      margin-bottom 2em
+      +above(768px)
+        margin-bottom 0
+        col(1/3)
 
