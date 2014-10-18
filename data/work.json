@@ -52,6 +52,20 @@
       "CMS Integration"
     ]
   },
+    {
+    "client" : "Apple Vacations",
+    "class": "apple_vacations",
+    "route": "#",
+    "projectType" : "responsive",
+    "logo" : "/images/work/apple_vacations/logo.png",
+    "images" : [
+      "/images/work/telenet/main_menu.jpg"
+    ],
+    "tasks" : [
+      "Front-End Dev",
+      "CMS Integration"
+    ]
+  },
   {
     "client" : "The Children's Journey",
     "class": "childrens_journey",
