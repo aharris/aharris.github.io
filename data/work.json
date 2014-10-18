@@ -36,11 +36,27 @@
     "desc" : "/templates/details/breathless.html"
   },
   {
+    "client" : "Movitas",
+    "class": "movitas",
+    "route": "movitas",
+    "projectType" : "responsive",
+    "logo" : "/images/work/movitas/logo.png",
+    "desc" : "/templates/details/movitas.html",
+    "images" : [
+      ""
+    ],
+    "tasks" : [
+      "Branding",
+      "UI Design",
+      "Front-End Dev",
+      "CMS Integration"
+    ]
+  },
+  {
     "client" : "The Children's Journey",
     "class": "childrens_journey",
     "route": "#",
     "projectType" : "responsive",
-    "data" : "Feb 2012",
     "logo" : "/images/work/childrens_journey/logo.png",
     "images" : [
       "/images/work/telenet/main_menu.jpg"
@@ -48,18 +64,8 @@
     "tasks" : [
       "Branding",
       "UI Design",
-      "Front-End Dev"
-    ]
-  },
-  {
-    "client" : "Client4",
-    "class": "la",
-    "route": "foobar",
-    "projectType" : "mobile",
-    "data" : "Feb 2012",
-    "logo" : "/images/work/telenet/logo.png",
-    "images" : [
-      { "thumbnail" : "" }
+      "Front-End Dev",
+      "Blog Integration"
     ]
   }
 ]
