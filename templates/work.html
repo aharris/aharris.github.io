@@ -12,7 +12,7 @@
       <li class="thumb {{item.class}}" ng-repeat="item in app.items">
         <a href="#/{{item.route}}">
           <div class="thumb-wrap">
-            <img src="{{item.logo}}" alt="{{item.client}}">
+            <img ng-src="{{item.logo}}" alt="{{item.client}}">
           </div>
           <ul class="tasks plain-list">
             <li ng-repeat="task in item.tasks">{{task}}</li>
