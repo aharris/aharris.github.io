@@ -1,12 +1,12 @@
 [
   {
-    "client" : "Telenet",
+    "client" : "Liberty Global",
     "class": "telenet",
-    "route": "telenet",
+    "route": "liberty_global",
     "projectType" : "mobile",
     "data" : "Feb 2012",
     "logo" : "/images/work/telenet/logo.png",
-    "desc" : "/templates/details/telenet.html",
+    "desc" : "/templates/details/liberty_global.html",
     "tasks" : [
       "Front-End Dev",
       "Multi Lingual Management"
@@ -20,7 +20,7 @@
     "client" : "Breathless Resorts & Spas",
     "class": "breathless",
     "route": "breathless",
-    "projectType" : "mobile",
+    "projectType" : "responsive",
     "date" : "September 2013",
     "logo" : "/images/work/breathless/logo.png",
     "images" : [
@@ -36,14 +36,19 @@
     "desc" : "/templates/details/breathless.html"
   },
   {
-    "client" : "client3",
-    "class": "la",
-    "route": "bar",
-    "projectType" : "mobile",
+    "client" : "The Children's Journey",
+    "class": "childrens_journey",
+    "route": "#",
+    "projectType" : "responsive",
     "data" : "Feb 2012",
-    "logo" : "/images/work/telenet/logo.png",
+    "logo" : "/images/work/childrens_journey/logo.png",
     "images" : [
       "/images/work/telenet/main_menu.jpg"
+    ],
+    "tasks" : [
+      "Branding",
+      "UI Design",
+      "Front-End Dev"
     ]
   },
   {
