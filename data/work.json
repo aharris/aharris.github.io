@@ -1,11 +1,27 @@
 [
   {
+    "client" : "Telenet",
+    "class": "telenet",
+    "route": "telenet",
+    "projectType" : "mobile",
+    "data" : "Feb 2012",
+    "logo" : "/images/work/telenet/logo.png",
+    "desc" : "/templates/details/telenet.html",
+    "tasks" : [
+      "Front-End Dev",
+      "Multi Lingual Management"
+    ],
+    "images" : [
+      "/images/work/telenet/main_menu.jpg",
+      "/images/work/telenet/suggested.jpg"
+    ]
+  },
+  {
     "client" : "Breathless Resorts & Spas",
     "class": "breathless",
     "route": "breathless",
     "projectType" : "mobile",
-    "details" : "foo lala",
-    "data" : "Feb 2012",
+    "date" : "September 2013",
     "logo" : "/images/work/breathless/logo.png",
     "images" : [
       "/images/work/breathless/breathless1.png",
@@ -16,28 +32,18 @@
       "UI Design",
       "Front-End Dev",
       "CMS Integration"
-    ]
-  },
-  {
-    "client" : "Client2",
-    "class": "la",
-    "route": "foo",
-    "projectType" : "mobile",
-    "details" : "foo lala",
-    "data" : "Feb 2012",
-    "images" : [
-      { "thumbnail" : "" }
-    ]
+    ],
+    "desc" : "/templates/details/breathless.html"
   },
   {
     "client" : "client3",
     "class": "la",
     "route": "bar",
     "projectType" : "mobile",
-    "details" : "foo lala",
     "data" : "Feb 2012",
+    "logo" : "/images/work/telenet/logo.png",
     "images" : [
-      { "thumbnail" : "" }
+      "/images/work/telenet/main_menu.jpg"
     ]
   },
   {
@@ -45,8 +51,8 @@
     "class": "la",
     "route": "foobar",
     "projectType" : "mobile",
-    "details" : "foo lala",
     "data" : "Feb 2012",
+    "logo" : "/images/work/telenet/logo.png",
     "images" : [
       { "thumbnail" : "" }
     ]
