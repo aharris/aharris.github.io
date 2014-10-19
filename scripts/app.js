@@ -12,7 +12,6 @@
 
     $http.get('data/work.json').success(function (res) {
       work.resolve(res);
-      // console.log(res);
     });
 
     return work.promise;

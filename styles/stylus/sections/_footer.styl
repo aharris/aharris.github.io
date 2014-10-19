@@ -10,3 +10,34 @@ footer
   position relative
   z-index 1
   margin-left: -2px
+
+.sub-footer
+  height 150px
+  width 100%
+  cf()
+
+  footer
+    width 90%
+    +above(768px)
+      width 100%
+      text-align right
+      padding-right 76px
+
+    .icon_circle
+      stroke flat-blue-1
+    .icon_shape
+      stroke none
+      fill flat-blue-1
+
+    .social-line
+      margin 0
+      width 50px
+      &:hover, &:active
+        .icon_circle
+          stroke flat-blue-2
+        .icon_shape
+          stroke none
+          fill flat-blue-2
+
+    .svg_long_shadow
+      width 80px
