@@ -35,6 +35,66 @@
       path
         fill flat-orange-3
 
+//Using
+.nav li:hover
+
+  #line-screen
+    .base
+      fill #6F82A4
+    .highlight
+      fill #A5B5D3
+    .logo
+      fill #516078
+    .stand
+      fill #516078
+
+  #line-robot
+    .circle
+      fill none
+    .ears
+      fill #39517A
+    .base
+      fill #4C70AF
+    .highlight
+      fill #6384BE
+    .antenna
+      fill #A0ABBD
+    .eyes
+      fill #FFFFFF
+
+  #line-email
+    .circle
+      fill none
+    .top
+      fill #3DD97F
+    .paper
+      fill #FFFFFF
+    .base
+      fill #2DB466
+    .text
+      fill #BBBBBB
+
+.contact
+  #line-email
+    .circle
+      fill none
+      stroke none
+    path
+      stroke flat-green-1
+    &:hover
+      .circle
+        stroke none
+      path
+        stroke #fff
+      .top
+        fill #3DD97F
+      .paper
+        fill #FFFFFF
+      .base
+        fill #2DB466
+      .text
+        fill #BBBBBB
+
 /*=============================================
 [ Inactive Styles ]
 ==============================================*/
@@ -561,25 +621,6 @@
 #line-winner:hover .ribbon { fill: #5BB3F0 }
 #line-winner:hover .base { fill: #1983CD }
 #line-winner:hover .text { fill: #FFFFFF }
-
-//Using
-.nav li:hover #line-screen .base { fill: #6F82A4 }
-.nav li:hover #line-screen .highlight { fill: #A5B5D3 }
-.nav li:hover #line-screen .logo { fill: #516078 }
-.nav li:hover #line-screen .stand { fill: #516078 }
-
-.nav li:hover #line-robot .circle { fill: none }
-.nav li:hover #line-robot .ears { fill: #39517A }
-.nav li:hover #line-robot .base { fill: #4C70AF }
-.nav li:hover #line-robot .highlight { fill: #6384BE }
-.nav li:hover #line-robot .antenna { fill: #A0ABBD }
-.nav li:hover #line-robot .eyes { fill: #FFFFFF }
-
-.nav li:hover #line-email .circle { fill: none }
-.nav li:hover #line-email .top { fill: #3DD97F }
-.nav li:hover #line-email .paper { fill: #FFFFFF }
-.nav li:hover #line-email .base { fill: #2DB466 }
-.nav li:hover #line-email .text { fill: #BBBBBB }
 
 
 @keyframes line-burst {
