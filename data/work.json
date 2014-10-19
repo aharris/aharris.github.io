@@ -43,7 +43,7 @@
     "logo" : "/images/work/movitas/logo.png",
     "desc" : "/templates/details/movitas.html",
     "images" : [
-      ""
+      "/images/work/movitas/pc_site.jpg"
     ],
     "tasks" : [
       "Branding",
@@ -53,13 +53,16 @@
     ]
   },
     {
-    "client" : "Apple Vacations",
-    "class": "apple_vacations",
-    "route": "#",
+    "client" : "Traveler Connect",
+    "class": "traveler-connect",
+    "date" : "January 2012",
+    "desc" : "/templates/details/traveler_connect.html",
+    "route": "traveler_connect",
     "projectType" : "responsive",
-    "logo" : "/images/work/apple_vacations/logo.png",
+    "logo" : "/images/work/traveler_connect/logo.png",
     "images" : [
-      "/images/work/telenet/main_menu.jpg"
+      "/images/work/traveler_connect/pc_site.jpg",
+      "/images/work/traveler_connect/app_shell.jpg"
     ],
     "tasks" : [
       "Front-End Dev",
