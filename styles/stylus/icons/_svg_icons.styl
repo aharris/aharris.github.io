@@ -1,27 +1,39 @@
 //Custom
 .svg-icon
-    display block
+  display block
 
 .social-line
-    display inline-block
-    vertical-align top
-    opacity .6
-    width 46px
-    height 74px
-    overflow hidden
-    margin 0 10px
-    +above(768px)
-        width 80px
-        height 80px
-        margin 20px
+  display inline-block
+  vertical-align top
+  opacity .6
+  width 46px
+  height 74px
+  overflow hidden
+  margin 0 10px
+  +above(768px)
+    width 80px
+    height 80px
+    margin 20px
 
-    &:hover
-        opacity 1
+&:hover
+  opacity 1
 
 .svg_long_shadow
-    width 80px
-    +above(768px)
-        width 134px
+  width 80px
+  +above(768px)
+    width 134px
+
+.view-site
+  .download-icon
+    height 32px
+    width 32px
+    vertical-align middle
+    path
+      fill flat-orange-2
+  &:hover
+    .download-icon
+      path
+        fill flat-orange-3
 
 /*=============================================
 [ Inactive Styles ]
@@ -29,338 +41,338 @@
 
 /*Genral*/
 .flat-line .icon > path {
-    stroke: #fff;
-    stroke-width: 3px;
-    fill: transparent;
-    transform: translate(0px, 0px) scale(1,1);
-    -webkit-transform: translate(0px ,0px) scale(1,1);
-    -moz-transform: translate(0px ,0px) scale(1,1);
+  stroke: #fff;
+  stroke-width: 3px;
+  fill: transparent;
+  transform: translate(0px, 0px) scale(1,1);
+  -webkit-transform: translate(0px ,0px) scale(1,1);
+  -moz-transform: translate(0px ,0px) scale(1,1);
 }
 .flat-line .circle {
-    // stroke: #fff;
-    // stroke-width: 3px;
-    fill: none;
-    transform: translate(0px, 0px) scale(1,1);
-    -webkit-transform: translate(0px ,0px) scale(1,1);
-    -moz-transform: translate(0px ,0px) scale(1,1);
+  // stroke: #fff;
+  // stroke-width: 3px;
+  fill: none;
+  transform: translate(0px, 0px) scale(1,1);
+  -webkit-transform: translate(0px ,0px) scale(1,1);
+  -moz-transform: translate(0px ,0px) scale(1,1);
 }
 /*Exceptions*/
 .flat-line .icon > .lightning {
-    stroke: #fff;
-    stroke-width: 1.5px;
-    fill: transparent;
-    transform: translate(0px, 0px) scale(1,1);
-    -webkit-transform: translate(0px ,0px) scale(1,1);
-    -moz-transform: translate(0px ,0px) scale(1,1);
+  stroke: #fff;
+  stroke-width: 1.5px;
+  fill: transparent;
+  transform: translate(0px, 0px) scale(1,1);
+  -webkit-transform: translate(0px ,0px) scale(1,1);
+  -moz-transform: translate(0px ,0px) scale(1,1);
 }
 #line-user .collar_right {
-    fill: #52be7f;
-    transform: translate(0px, 0px) scale(1,1);
-    -webkit-transform: translate(0px ,0px) scale(1,1);
-    -moz-transform: translate(0px ,0px) scale(1,1);
+  fill: #52be7f;
+  transform: translate(0px, 0px) scale(1,1);
+  -webkit-transform: translate(0px ,0px) scale(1,1);
+  -moz-transform: translate(0px ,0px) scale(1,1);
 }
 #line-user .collar_left {
-    fill: #52be7f;
-    transform: translate(0px, 0px) scale(1,1);
-    -webkit-transform: translate(0px ,0px) scale(1,1);
-    -moz-transform: translate(0px ,0px) scale(1,1);
+  fill: #52be7f;
+  transform: translate(0px, 0px) scale(1,1);
+  -webkit-transform: translate(0px ,0px) scale(1,1);
+  -moz-transform: translate(0px ,0px) scale(1,1);
 }
 #line-lightning .bolt {
-    stroke: #fff;
-    stroke-width: 3px;
-    fill: transparent;
-    transform: translate(0px, 0px) scale(1,1);
-    -webkit-transform: translate(0px ,0px) scale(1,1);
-    -moz-transform: translate(0px ,0px) scale(1,1);
+  stroke: #fff;
+  stroke-width: 3px;
+  fill: transparent;
+  transform: translate(0px, 0px) scale(1,1);
+  -webkit-transform: translate(0px ,0px) scale(1,1);
+  -moz-transform: translate(0px ,0px) scale(1,1);
 }
 #line-lightning .highlight {
-    fill: transparent;
-    stroke: 0px;
-    transform: translate(0px, 0px) scale(1,1);
-    -webkit-transform: translate(0px ,0px) scale(1,1);
-    -moz-transform: translate(0px ,0px) scale(1,1);
+  fill: transparent;
+  stroke: 0px;
+  transform: translate(0px, 0px) scale(1,1);
+  -webkit-transform: translate(0px ,0px) scale(1,1);
+  -moz-transform: translate(0px ,0px) scale(1,1);
 }
 #line-mic .bars_right rect {
-    fill: #52be7f;
-    transform: translate(0px, 0px) scale(1,1);
-    -webkit-transform: translate(0px ,0px) scale(1,1);
-    -moz-transform: translate(0px ,0px) scale(1,1);
+  fill: #52be7f;
+  transform: translate(0px, 0px) scale(1,1);
+  -webkit-transform: translate(0px ,0px) scale(1,1);
+  -moz-transform: translate(0px ,0px) scale(1,1);
 }
 #line-coffee .top {
-    fill: #52be7f;
-    transform: translate(0px, 0px) scale(1,1);
-    -webkit-transform: translate(0px ,0px) scale(1,1);
-    -moz-transform: translate(0px ,0px) scale(1,1);
+  fill: #52be7f;
+  transform: translate(0px, 0px) scale(1,1);
+  -webkit-transform: translate(0px ,0px) scale(1,1);
+  -moz-transform: translate(0px ,0px) scale(1,1);
 }
 /*Specifics*/
 #line-browser .green {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-browser .orange {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-browser .red {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-browser .screen {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-brush .brush_silver {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-calander .number {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-camera .lens_inner {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-camera .lens {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-camera .strip {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-camera .red {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-clock .seconds {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-clock .middle {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-clock .hour {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-clock .minute {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-clock .face {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-coffee .top {
-    fill: transparent;
-    stroke-width: 3px;
-    stroke: #fff;
+  fill: transparent;
+  stroke-width: 3px;
+  stroke: #fff;
 }
 #line-coffee .middle {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-disk .top {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-disk .top_right {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-disk .text {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-email .paper {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-email .text {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-film .top {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-film .bottom {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-folder .paper_front {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-folder .paper_back {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-graph .dot_1,
 #line-graph .dot_2,
 #line-graph .dot_3,
 #line-graph .dot_4 {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-home .hole {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-home .roof { -webkit-transform: translateY(-5px) }
 #line-location .inner {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-lock .keyhole {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-lock .baselight {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-magnify .glass {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-message .dots {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-picture .sun {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-picture .mountain {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-mic .bars_left {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-mic .bars_right rect {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-paper .text {
-    fill: transparent;
-    stroke-width: 0px;
+  fill: transparent;
+  stroke-width: 0px;
 }
 #line-paper .corner {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-pencil .metal {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-phone .screen {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-phone .details {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-robot .eyes {
-    fill: #FFFFFF;
-    stroke-width: 0px;
+  fill: #FFFFFF;
+  stroke-width: 0px;
 }
 #line-suitcase .buttons {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-tag .dot {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-thumbsdown .dot {
-    fill: #FFFFFF;
-    stroke-width: 0px;
+  fill: #FFFFFF;
+  stroke-width: 0px;
 }
 #line-thumbsup .dot {
-    fill: #FFFFFF;
-    stroke-width: 0px;
+  fill: #FFFFFF;
+  stroke-width: 0px;
 }
 #line-trash .details {
-    fill: #FFF;
-    stroke-width: 0px;
+  fill: #FFF;
+  stroke-width: 0px;
 }
 #line-winner .text {
-    fill: #FFFFFF;
-    stroke-width: 0px;
+  fill: #FFFFFF;
+  stroke-width: 0px;
 }
 #line-spaceship .light {
-    -webkit-transform: translateY(1px);
-    -moz-transform: translateY(1px);
-    transform: translateY(1px);
+  -webkit-transform: translateY(1px);
+  -moz-transform: translateY(1px);
+  transform: translateY(1px);
 }
 /*=============================================
 [ Hover Styles ]
 ==============================================*/
 .nav li:hover .icon {
-    -moz-transform: scale(1,1);
-    -webkit-transform: scale(1,1);
-    transform: scale(1,1);
-    /*animation-name*/
-    -webkit-animation-name: line-burst;
-    -moz-animation-name: line-burst;
-    -ms-animation-name: line-burst;
-    -o-animation-name: line-burst;
-    animation-name: line-burst;
-    /*animation-duration*/
-    -webkit-animation-duration: .4s;
-    -moz-animation-duration: .4s;
-    -ms-animation-duration: .4s;
-    -o-animation-duration: .4s;
-    animation-duration: .4s;
-    /*transform-origin*/
-    -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin: 50px 50px !important;
-    -ms-transform-origin: 50% 50%;
-    -o-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
+  -moz-transform: scale(1,1);
+  -webkit-transform: scale(1,1);
+  transform: scale(1,1);
+  /*animation-name*/
+  -webkit-animation-name: line-burst;
+  -moz-animation-name: line-burst;
+  -ms-animation-name: line-burst;
+  -o-animation-name: line-burst;
+  animation-name: line-burst;
+  /*animation-duration*/
+  -webkit-animation-duration: .4s;
+  -moz-animation-duration: .4s;
+  -ms-animation-duration: .4s;
+  -o-animation-duration: .4s;
+  animation-duration: .4s;
+  /*transform-origin*/
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50px 50px !important;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
 .nav li:hover .icon > path {
-    stroke: transparent;
-    stroke-width: 0px;
+  stroke: transparent;
+  stroke-width: 0px;
 }
 .nav li:hover .circle {
-    stroke: transparent;
-    stroke-width: 0px;
+  stroke: transparent;
+  stroke-width: 0px;
 }
 /*Exceptions*/
 .nav li:hover .icon > .lightning {
-    stroke: transparent;
-    stroke-width: 0px;
+  stroke: transparent;
+  stroke-width: 0px;
 }
 .nav li:hover #line-user .collar_right {
-    stroke: transparent;
-    stroke-width: 0px;
+  stroke: transparent;
+  stroke-width: 0px;
 }
 .nav li:hover#line-user .collar_left {
-    stroke: transparent;
-    stroke-width: 0px;
+  stroke: transparent;
+  stroke-width: 0px;
 }
 .nav li:hover #line-lightning .bolt {
-    stroke: transparent;
-    stroke-width: 0px;
+  stroke: transparent;
+  stroke-width: 0px;
 }
 .nav li:hover #line-lightning .highlight {
-    stroke: transparent;
-    stroke-width: 0px;
+  stroke: transparent;
+  stroke-width: 0px;
 }
 .nav li:hover #line-mic .bars_right rect {
-    stroke: transparent;
-    stroke-width: 0px;
+  stroke: transparent;
+  stroke-width: 0px;
 }
 .nav li:hover #line-coffee .top {
-    stroke: transparent;
-    stroke-width: 0px;
+  stroke: transparent;
+  stroke-width: 0px;
 }
 #line-browser:hover .circle { fill: #B1EB5B }
 #line-browser:hover .screen { fill: #b0b0b0 }
@@ -571,38 +583,38 @@
 
 
 @keyframes line-burst {
-    0% {
-        -webkit-transform: scale(1.1);
-        animation-timing-function: ease-in;
-    }
-    37% {
-        -webkit-transform: scale(1.3);
-        animation-timing-function: ease-out;
-    }
-    55% {
-        -webkit-transform: scale(1.17);
-        animation-timing-function: ease-in;
-    }
-    73% {
-        -webkit-transform: scale(1.05);
-        animation-timing-function: ease-out;
-    }
-    82% {
-        -webkit-transform: scale(1.2);
-        animation-timing-function: ease-in;
-    }
-    91% {
-        -webkit-transform: scale(1.3);
-        animation-timing-function: ease-out;
-    }
-    96% {
-        -webkit-transform: scale(1.2);
-        animation-timing-function: ease-in;
-    }
-    100% {
-        -webkit-transform: scale(1.1);
-        animation-timing-function: ease-out;
-    }
+  0% {
+    -webkit-transform: scale(1.1);
+    animation-timing-function: ease-in;
+  }
+  37% {
+    -webkit-transform: scale(1.3);
+    animation-timing-function: ease-out;
+  }
+  55% {
+    -webkit-transform: scale(1.17);
+    animation-timing-function: ease-in;
+  }
+  73% {
+    -webkit-transform: scale(1.05);
+    animation-timing-function: ease-out;
+  }
+  82% {
+    -webkit-transform: scale(1.2);
+    animation-timing-function: ease-in;
+  }
+  91% {
+    -webkit-transform: scale(1.3);
+    animation-timing-function: ease-out;
+  }
+  96% {
+    -webkit-transform: scale(1.2);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    animation-timing-function: ease-out;
+  }
 }
 
 
@@ -616,123 +628,123 @@
 .social-line:hover { cursor: pointer }
 /* Gradient Offsets */
 .offset0 {
-    stop-color: #000000;
-    stop-opacity: 0.5;
+  stop-color: #000000;
+  stop-opacity: 0.5;
 }
 .offset1 {
-    stop-color: #000000;
-    stop-opacity: 0.2;
+  stop-color: #000000;
+  stop-opacity: 0.2;
 }
 .offset2 {
-    stop-color: #000000;
-    stop-opacity: 0.173;
+  stop-color: #000000;
+  stop-opacity: 0.173;
 }
 .offset3 {
-    stop-color: #000000;
-    stop-opacity: 0;
+  stop-color: #000000;
+  stop-opacity: 0;
 }
 .offset4 {
-    stop-color: #000000;
-    stop-opacity: 0.7;
+  stop-color: #000000;
+  stop-opacity: 0.7;
 }
 .offset5 {
-    stop-color: #000000;
-    stop-opacity: 0.1143;
+  stop-color: #000000;
+  stop-opacity: 0.1143;
 }
 .offset6 {
-    stop-color: #000000;
-    stop-opacity: 0.1106;
+  stop-color: #000000;
+  stop-opacity: 0.1106;
 }
 .social-line .icon_circle_shadow {
-    fill: none;
-    fill-opacity: 0;
-    opacity: 0;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all 4s ease;
-    transition: all .4s ease;
+  fill: none;
+  fill-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all 4s ease;
+  transition: all .4s ease;
 }
 .social-line .icon_circle {
-    stroke: #FFFFFF;
-    stroke-width: 2;
-    stroke-miterlimit: 10;
-    fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  fill: none;
 }
 .social-line .icon_shape { fill: #FFFFFF }
 /*=============================================
 [ Hover Styles ]
 ==============================================*/
 .social-line:hover {
-    overflow: visible;
-    transform: scale(1.15,1.15);
+  overflow: visible;
+  transform: scale(1.15,1.15);
 }
 
 /* Gradient IDs */
 .social-line:hover .icon_circle_shadow {
-    fill: url(#icon_circle_gradient);
-    fill-opacity: 0.7;
-    opacity: 1;
+  fill: url(#icon_circle_gradient);
+  fill-opacity: 0.7;
+  opacity: 1;
 }
 .social-line:hover .icon_shape_shadow {
-    fill: url(#icon_shape_gradient);
-    fill-opacity: 0.9;
-    -webkit-transition-delay: .4s;
-    -moz-transition-delay: .4s;
-    transition-delay: .4s;
-    -webkit-transform: scale(1,1);
-    -moz-transform: scale(1,1);
-    transform: scale(1,1);
+  fill: url(#icon_shape_gradient);
+  fill-opacity: 0.9;
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  transition-delay: .4s;
+  -webkit-transform: scale(1,1);
+  -moz-transform: scale(1,1);
+  transform: scale(1,1);
 }
 /* Icon Styles */
 .social-line:hover .icon_circle {
-    stroke: #FFFFFF;
-    stroke-width: 2;
-    stroke-miterlimit: 10;
-    fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  fill: none;
 }
 .social-line:hover path.icon_shape {
-    transform: scale(1,1);
-    /*animation-name*/
-    animation-name: burst;
-    /*animation-duration*/
-    animation-duration: .4s;
-    /*transform-origin*/
-    transform-origin: 50% 50%;
+  transform: scale(1,1);
+  /*animation-name*/
+  animation-name: burst;
+  /*animation-duration*/
+  animation-duration: .4s;
+  /*transform-origin*/
+  transform-origin: 50% 50%;
 }
 
 /*=============================================
 [ KeyFrame Animations ]
 ==============================================*/
 @keyframes burst {
-    0% {
-        transform: scale(1,1);
-        animation-timing-function: ease-in;
-    }
-    37% {
-        transform: scale(1.5,1.5);
-        animation-timing-function: ease-out;
-    }
-    55% {
-        transform: scale(1.37,1.37);
-        animation-timing-function: ease-in;
-    }
-    73% {
-        transform: scale(1,1);
-        animation-timing-function: ease-out;
-    }
-    82% {
-        transform: scale(1.45,1.45);
-        animation-timing-function: ease-in;
-    }
-    91% {
-        transform: scale(1.5,1.5);
-        animation-timing-function: ease-out;
-    }
-    96% {
-        transform: scale(1.4,1.4);
-        animation-timing-function: ease-in;
-    }
-    100% {
-        transform: scale(1,1);
-        animation-timing-function: ease-out;
-    }
+  0% {
+    transform: scale(1,1);
+    animation-timing-function: ease-in;
+  }
+  37% {
+    transform: scale(1.5,1.5);
+    animation-timing-function: ease-out;
+  }
+  55% {
+    transform: scale(1.37,1.37);
+    animation-timing-function: ease-in;
+  }
+  73% {
+    transform: scale(1,1);
+    animation-timing-function: ease-out;
+  }
+  82% {
+    transform: scale(1.45,1.45);
+    animation-timing-function: ease-in;
+  }
+  91% {
+    transform: scale(1.5,1.5);
+    animation-timing-function: ease-out;
+  }
+  96% {
+    transform: scale(1.4,1.4);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: scale(1,1);
+    animation-timing-function: ease-out;
+  }
 }
