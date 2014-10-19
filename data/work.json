@@ -90,19 +90,21 @@
     ]
   },
   {
-    "client" : "The Children's Journey",
-    "class": "childrens_journey",
-    "route": "#",
+    "client" : "Media Giraffes",
+    "class": "media-giraffes",
+    "route": "media_giraffes",
+    "date" : "May 2011",
     "projectType" : "responsive",
-    "logo" : "/images/work/childrens_journey/logo.png",
+    "logo" : "/images/work/media_giraffes/logo.png",
+    "desc" : "/templates/details/media_giraffes.html",
     "images" : [
-      "/images/work/telenet/main_menu.jpg"
+      "/images/work/media_giraffes/pc_site.jpg",
+      "/images/work/media_giraffes/shell.jpg"
     ],
     "tasks" : [
-      "Branding",
       "UI Design",
       "Front-End Dev",
-      "Blog Integration"
+      "Wordpress"
     ]
   }
 ]
