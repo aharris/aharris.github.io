@@ -314,6 +314,7 @@ main {
 html,
 body {
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 body {
   font-family: 'open_sansregular';
