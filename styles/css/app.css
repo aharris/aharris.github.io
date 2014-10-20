@@ -311,12 +311,15 @@ main {
   height: 100%;
   position: relative;
 }
+html,
+body {
+  overflow: hidden;
+}
 body {
   font-family: 'open_sansregular';
   font-size: 14px;
   background: #2980b9 url("/images/bg_pattern.jpg");
   color: #7f8c8d;
-  overflow: hidden;
 }
 img {
   max-width: 100%;
