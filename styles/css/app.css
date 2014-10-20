@@ -313,7 +313,7 @@ main {
 }
 html,
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body {
   font-family: 'open_sansregular';
