@@ -1150,28 +1150,28 @@ footer {
     margin: 20px;
   }
 }
-:hover {
+.social-line:hover {
   opacity: 1;
   -ms-filter: none;
   filter: none;
 }
-.svg_long_shadow {
+.social-line .svg_long_shadow {
   width: 80px;
 }
 @media only screen and (min-width: 768px) {
-  .svg_long_shadow {
+  .social-line .svg_long_shadow {
     width: 134px;
   }
 }
-.view-site .download-icon {
+.social-line .view-site .download-icon {
   height: 32px;
   width: 32px;
   vertical-align: middle;
 }
-.view-site .download-icon path {
+.social-line .view-site .download-icon path {
   fill: #e67e22;
 }
-.view-site:hover .download-icon path {
+.social-line .view-site:hover .download-icon path {
   fill: #d35400;
 }
 .nav li:hover #line-screen .base {

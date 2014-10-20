@@ -15,25 +15,25 @@
     height 80px
     margin 20px
 
-&:hover
-  opacity 1
-
-.svg_long_shadow
-  width 80px
-  +above(768px)
-    width 134px
-
-.view-site
-  .download-icon
-    height 32px
-    width 32px
-    vertical-align middle
-    path
-      fill flat-orange-2
   &:hover
+    opacity 1
+
+  .svg_long_shadow
+    width 80px
+    +above(768px)
+      width 134px
+
+  .view-site
     .download-icon
+      height 32px
+      width 32px
+      vertical-align middle
       path
-        fill flat-orange-3
+        fill flat-orange-2
+    &:hover
+      .download-icon
+        path
+          fill flat-orange-3
 
 //Using
 .nav li:hover
