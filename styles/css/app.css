@@ -305,18 +305,11 @@ th {
   font-weight: normal;
   font-style: normal;
 }
-* {
-  -webkit-overflow-scrolling: touch;
-}
 html,
 body,
 main {
   height: 100%;
   position: relative;
-}
-html,
-body {
-  overflow-x: hidden;
 }
 body {
   font-family: 'open_sansregular';
