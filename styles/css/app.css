@@ -678,7 +678,6 @@ footer {
 }
 .sub-footer {
   height: 150px;
-  width: 100%;
   *zoom: 1;
 }
 .sub-footer:before,
@@ -694,9 +693,7 @@ footer {
 }
 @media only screen and (min-width: 768px) {
   .sub-footer footer {
-    width: 100%;
     text-align: right;
-    padding-right: 76px;
   }
 }
 .sub-footer footer .icon_circle {
