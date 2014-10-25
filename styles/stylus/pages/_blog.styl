@@ -1,0 +1,50 @@
+.blog-link
+  &:hover, &:active
+    .blog-icon-date
+      display block
+  .svg-icon
+    position relative
+
+  .blog-icon-date
+    align(both)
+    top 43%
+    left 52%
+    display none
+
+.blog
+  h2
+    margin-bottom 0
+
+.blog-summary
+  cf()
+  border-radius 10px
+  background rgba(255,255,255,.8)
+  margin 3em 0
+  padding 2em
+  position relative
+  text-align center
+  transition all 200ms
+
+  &:hover
+    background rgba(255,255,255,1)
+    box-shadow 0 0 5px 1px rgba(0,0,0,.1)
+    .post-date
+      color flat-gray-2
+
+  .signature
+    float right
+    text-align right
+
+  h3
+    margin-top 1em
+
+.post-date
+  color flat-gray-1
+  font-family header-font
+  right 2em
+  position absolute
+  top 1em
+  transition all 200ms
+
+
+

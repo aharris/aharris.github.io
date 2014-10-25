@@ -28,6 +28,14 @@
           leave: 'leave-bottom'
         }
       })
+      .when('/blog', {
+        templateUrl : 'templates/blog.html',
+        controller: 'AppController',
+          animations: {
+            enter: 'enter-bottom',
+            leave: 'leave-bottom'
+          }
+      })
       .when('/contact', {
         templateUrl : 'templates/contact.html',
         controller: 'AppController',

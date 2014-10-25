@@ -82,10 +82,10 @@
     path
       stroke flat-green-1
     &:hover
-      .circle
-        stroke none
       path
         stroke #fff
+      .circle
+        stroke none
       .top
         fill #3DD97F
       .paper
@@ -94,6 +94,26 @@
         fill #2DB466
       .text
         fill #BBBBBB
+
+.blog-link
+  &:hover
+    .circle
+      fill none
+    .base_top
+      fill #5B3F89
+    .left
+      fill #848484
+    .right
+      fill #848484
+    .number
+      fill #fff
+    .base_bottom
+      fill #644892
+
+  .number
+    fill transparent
+    stroke-width 0px
+
 
 /*=============================================
 [ Inactive Styles ]
@@ -183,10 +203,6 @@
 }
 #line-brush .brush_silver {
   fill: #FFF;
-  stroke-width: 0px;
-}
-#line-calander .number {
-  fill: transparent;
   stroke-width: 0px;
 }
 #line-camera .lens_inner {
@@ -446,12 +462,6 @@
 #line-brush:hover .brush_silver { fill: #C8C8C8 }
 #line-brush:hover .brush_tip { fill: #917152 }
 #line-brush:hover .circle { fill: #F0A878 }
-#line-calander:hover .circle { fill: #F3CF3F }
-#line-calander:hover .base_top { fill: #5B3F89 }
-#line-calander:hover .left { fill: #848484 }
-#line-calander:hover .right { fill: #848484 }
-#line-calander:hover .number { fill: #fff }
-#line-calander:hover .base_bottom { fill: #644892 }
 #line-camera:hover  .circle { fill: #F39C12 }
 #line-camera:hover .base { fill: #E0DECD }
 #line-camera:hover .strip { fill: #3376D2 }

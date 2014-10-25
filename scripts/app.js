@@ -42,6 +42,11 @@
 
   }]);
 
+  app.controller('DateController', ['$scope', function ($scope) {
+    var date = new Date();
+    $scope.currentDate = date.getDate();
+  }]);
+
   app.directive('viewAnimations', function ($route) {
     return {
       restrict: 'A',

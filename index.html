@@ -50,6 +50,24 @@
               About
             </a>
           </li>
+          <li class="blog-link" ng-controller="DateController">
+            <a href="#/blog">
+              <span class="svg-icon flat-line" id="line-calander">
+                <svg class="flat_icon" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 100 100">
+                  <path class="circle" d="M50,2.125c26.441,0,47.875,21.434,47.875,47.875S76.441,97.875,50,97.875C17.857,97.875,2.125,76.441,2.125,50S23.559,2.125,50,2.125z"></path>
+                  <g class="icon">
+                    <path class="base_top" d="M69.436,24.573h-38.89c-2.478,0-4.486,2.009-4.486,4.487V50h47.862V29.061C73.922,26.582,71.912,24.573,69.436,24.573z"></path>
+                    <path class="base_bottom" d="M69.436,75.427h-38.89c-2.478,0-4.486-2.009-4.486-4.487V50h47.862v20.939C73.922,73.418,71.912,75.427,69.436,75.427z"></path>
+                    <path class="left" d="M23.088,47.009h2.991v5.982h-2.991V47.009z"></path>
+                    <path class="right" d="M73.922,47.009h2.99v5.982h-2.99V47.009z"></path>
+                  </g>
+                </svg>
+                <span class="blog-icon-date">{{currentDate}}</span>
+
+              </span>
+              Blog
+            </a>
+          </li>
           <li ng-class="getClass('/contact')">
             <a href="#/contact">
               <span class="svg-icon flat-line" id="line-email">
