@@ -1,13 +1,11 @@
-.work-content
-  padding 3em 0
-  .publicity
-    text-align center
-    margin-bottom 5px
-    font-size 16px
-  .publicity-date
-    margin-top 0
-    text-align center
-    color flat-gray-2
+.publicity
+  text-align center
+  margin-bottom 5px
+  font-size 16px
+.publicity-date
+  margin-top 0
+  text-align center
+  color flat-gray-2
 
 .quote
   padding 40px
@@ -34,8 +32,8 @@
 .thumbs
   list-style none
   padding 0
+  margin 0
   text-align center
-  margin-bottom 10em
   cf()
   a
     text-decoration none
@@ -47,7 +45,7 @@
   padding 10px
   width 100%
   border-radius 2px
-  background rgba(255,255,255,.8)
+  background #fff
   transition all 300ms
   margin-bottom 2em
   min-height 260px
@@ -63,18 +61,13 @@
     col(1/4)
     &:nth-child(4n)
       margin-right 0
-  &:hover
-    background rgba(255,255,255,1)
-    box-shadow 0 0 5px 1px rgba(0,0,0,.1)
-    .view-link
-      color flat-orange-3
 
 .thumb-wrap
   width 80%
   height 140px
   position relative
   margin 0 auto
-  opacity .7
+  padding 1em 0
 
   img
     display block
@@ -83,6 +76,21 @@
     top 50%
     left 50%
     transform translate(-50%, -50%)
+
+
+.thumb-link
+  background rgba(255,255,255,.8)
+  &:hover
+    background rgba(255,255,255,1)
+    box-shadow 0 0 5px 1px rgba(0,0,0,.1)
+    .view-link
+      color flat-orange-3
+    .thumb-wrap
+      opacity 1
+
+  .thumb-wrap
+    opacity .7
+    transition all 300ms
 
 
 .tasks
@@ -138,8 +146,6 @@
 
 
 .details
-  h2
-    margin-bottom 0
   p
     margin 0 auto
     +above(768px)
