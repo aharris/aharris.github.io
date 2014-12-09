@@ -31,27 +31,35 @@
       .when('/blog', {
         templateUrl : 'templates/blog.html',
         controller: 'AppController',
-          animations: {
-            enter: 'enter-bottom',
-            leave: 'leave-bottom'
-          }
+        animations: {
+          enter: 'enter-bottom',
+          leave: 'leave-bottom'
+        }
       })
       .when('/contact', {
         templateUrl : 'templates/contact.html',
         controller: 'AppController',
-          animations: {
-            enter: 'enter-bottom',
-            leave: 'leave-bottom'
-          }
+        animations: {
+          enter: 'enter-bottom',
+          leave: 'leave-bottom'
+        }
+      })
+      .when('/responsive_js', {
+        templateUrl : 'templates/blog_posts/responsive_js.html',
+        controller: 'AppController',
+        animations: {
+          enter: 'enter-bottom',
+          leave: 'leave-bottom'
+        }
       })
       .when('/:workRoute', {
         templateUrl : 'templates/work_details.html',
         controller: 'AppController',
-          animations: {
-            enter: 'enter-bottom',
-            leave: 'leave-bottom'
-          }
-        })
+        animations: {
+          enter: 'enter-bottom',
+          leave: 'leave-bottom'
+        }
+      })
       .otherwise({
         redirectTo: 'templates/404.html'
       });

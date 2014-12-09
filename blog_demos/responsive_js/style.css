@@ -1,0 +1,25 @@
+/* Default small screen styles */
+
+.size {
+  color: #fff;
+  text-align: center;
+}
+
+.beacon {
+  content: 'small';
+  display: none;
+}
+
+/* Medium screen styles */
+@media only screen and (min-width: 48em) {
+  .beacon {
+    content: 'medium';
+  }
+}
+
+/* Large screen styles */
+@media only screen and (min-width: 64em) {
+  .beacon {
+    content: 'large';
+  }
+}

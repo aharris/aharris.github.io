@@ -1,0 +1,52 @@
+<div class="content blog">
+  <div class="wrapper">
+
+    <a href="#/" class="close">Close</a>
+
+    <h2>Responsive Javascript</h2>
+    <h3>12-8-2014</h3>
+
+    <article class="blog-post">
+      <div class="post-date">12-8-2014</div>
+
+      <div class="article-inner">
+
+        <h3 class="blog-title">
+          Responsive Javascript!
+        </h3>
+        <h4>The Goal</h4>
+        <p>
+          To make our JS respond appropriately to our content and the users browser and font size.
+        </p>
+
+        <h4>Why?</h4>
+        <p>This is not only valuable these days but I would argue absolutely necessary. We have learned with responsive web design that we should make our content and layouts flexible for any screen size and resolution, it is time for our JS to do the same. Not only does this solution allow for you to call different JS at different screen sizes but it also allows you to fire that same JS when the user zooms their browser in and out and even when the change their default font size!</p>
+        <p>This becomes extremely crucial for accessibility. We cannot assume that users are viewing our sites in the perfect Photoshop world we had originally designed for. We need to allow for our sites to be flexible enough to be easily accessible and readable for everyone.</p>
+
+        <h4>Demo</h4>
+        <a href="/blog_posts/responsive.html" target="_blank">View Demo</a>
+
+        <h4>How To:</h4>
+        <p>The first place to start is with the media query.</p>
+        <p>In order for our content to be flexible we should define our media queries in ems. This allows our layouts to respond appropriately based on browser settings that may overwrite our intended viewing.</p>
+        <p>The easiest way to do this is to divide our intended breakpoint (in pixels) by 16(browser default font size). This will give you the appropriate em values.</p>
+        <!-- Insert Code -->
+
+        <p>Next comes the beacon (for lack of a better term).</p>
+        <p>This allows our JS to have insight into what is happening in our css and fire related functions.</p>
+        <!-- Insert Code -->
+
+        <p>We give this beacon a content property in our css that corresponds to it’s screen size at each breakpoint.</p>
+        <!-- Insert Code -->
+
+        <p>After that it is time to write the JS to read these css content values and only fire the correct JS when the content types match and change (only when they change).</p>
+        <!-- Insert Code -->
+
+        <p>Responsive JS Party Time!</p>
+
+      </div>
+
+    </article>
+
+  </div>
+</div>
