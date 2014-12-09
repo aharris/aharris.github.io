@@ -3,8 +3,16 @@
   var app = angular.module('app', [
     'ngRoute',
     'routes',
-    'ngAnimate'
+    'ngAnimate',
+    'hljs'
     ]);
+
+  app.config(function (hljsServiceProvider) {
+    hljsServiceProvider.setOptions({
+      // replace tab with 2 spaces
+      tabReplace: '  '
+    });
+  });
 
   app.factory('Work', ['$http', '$q', function($http, $q){
 

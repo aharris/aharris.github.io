@@ -2,6 +2,7 @@ var App = window.App || {
 
   beacon: $('.beacon').css('content'),
 
+  // Store the beacon Value
   lastBeacon: this.beacon,
 
   init: function () {

@@ -1,7 +1,12 @@
 /* Default small screen styles */
 
-.size {
+h1{
   color: #fff;
+  text-align: center;
+}
+
+h2, h3 {
+  color: rgba(255,255,255, .9);
   text-align: center;
 }
 
