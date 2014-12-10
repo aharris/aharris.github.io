@@ -11,20 +11,20 @@ h2, h3 {
 }
 
 .beacon {
-  content: 'small';
   display: none;
+  width: 0px;
 }
 
 /* Medium screen styles */
 @media only screen and (min-width: 48em) {
   .beacon {
-    content: 'medium';
+    width: 768px;
   }
 }
 
 /* Large screen styles */
 @media only screen and (min-width: 64em) {
   .beacon {
-    content: 'large';
+    width: 1024px;
   }
 }

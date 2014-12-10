@@ -49,25 +49,26 @@
         <hr/>
         <br/>
 
-        <p>We give this beacon a content property in our css that corresponds to it’s screen size at each breakpoint.</p>
+        <p>We give this beacon a width property in our css that corresponds to it’s default pixel based screen size at each breakpoint.</p>
+        <p>Note: You could really look up any valid css property here. I went with width as it seemed the most semantic, extendable, and cross browser compatible.</p>
         <!-- Code -->
         <div hljs>
           .beacon {
-            content: 'small';
             display: none;
+            width: 0px;
           }
 
           /* Medium screen styles */
           @media only screen and (min-width: 48em) {
             .beacon {
-              content: 'medium';
+              width: 768px;
             }
           }
 
           /* Large screen styles */
           @media only screen and (min-width: 64em) {
             .beacon {
-              content: 'large';
+              width: 1024px;
             }
           }
         </div>
@@ -81,7 +82,7 @@
         <div hljs>
           var App = window.App || {
 
-            beacon: $('.beacon').css('content'),
+            beacon: $('.beacon').css('width'),
 
             // Store the beacon Value
             lastBeacon: this.beacon,
@@ -92,7 +93,7 @@
             },
 
             resize: function () {
-              var newBeacon = $('.beacon').css('content');
+              var newBeacon = $('.beacon').css('width');
 
               // If the screen size has changed fire the functions for the new screen size
               if (this.lastBeacon !== newBeacon) {
@@ -103,13 +104,13 @@
 
             getBeacon: function(beacon) {
               switch(beacon) {
-                case 'small':
+                case "0px":
                   this.smallStuff();
                   break;
-                case 'medium':
+                case "768px":
                   this.mediumStuff();
                   break;
-                case 'large':
+                case "1024px":
                   this.largeStuff();
                   break;
                 default:

@@ -1,6 +1,6 @@
 var App = window.App || {
 
-  beacon: $('.beacon').css('content'),
+  beacon: $('.beacon').css('width'),
 
   // Store the beacon Value
   lastBeacon: this.beacon,
@@ -11,7 +11,7 @@ var App = window.App || {
   },
 
   resize: function () {
-    var newBeacon = $('.beacon').css('content');
+    var newBeacon = $('.beacon').css('width');
 
     // If the screen size has changed fire the functions for the new screen size
     if (this.lastBeacon !== newBeacon) {
@@ -22,13 +22,13 @@ var App = window.App || {
 
   getBeacon: function(beacon) {
     switch(beacon) {
-      case 'small':
+      case "0px":
         this.smallStuff();
         break;
-      case 'medium':
+      case "768px":
         this.mediumStuff();
         break;
-      case 'large':
+      case "1024px":
         this.largeStuff();
         break;
       default:
