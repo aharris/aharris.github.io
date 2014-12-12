@@ -4,7 +4,7 @@
     "class": "telenet",
     "route": "liberty_global",
     "projectType" : "mobile",
-    "data" : "Feb 2012",
+    "date" : "Feb 2014",
     "logo" : "/images/work/telenet/logo.png",
     "desc" : "/templates/details/liberty_global.html",
     "tasks" : [
