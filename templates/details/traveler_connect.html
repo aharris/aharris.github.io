@@ -2,6 +2,9 @@
 <a href="http://travelerconnect.movitas.com/" target="_blank" class="view-site">View Site</a>
 <h2>{{app.currentItem.client}}</h2>
 <h3>{{app.currentItem.date}}</h3>
+<a href="#/{{getNextWorkItem()}}" ng-show="getNextWorkItem()">Next</a>
+<a href="#/{{getPrevWorkItem()}}" ng-show="getPrevWorkItem()">Prev</a>
+
 <article class="work-content">
   <h4 class="headline">Pack the app. Leave the hassles.</h4>
   <p>

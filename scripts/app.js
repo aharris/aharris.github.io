@@ -40,6 +40,24 @@
       }
     };
 
+    $scope.getNextWorkItem = function() {
+      for (var i = 0; i < this.app.items.length - 1; i++) {
+        if (this.app.items[i].route === this.app.currentItem.route && i !== this.app.items.length) {
+          return this.app.items[i + 1].route;
+        }
+      }
+      return null;
+    };
+
+    $scope.getPrevWorkItem = function() {
+      for (var i = 0; i < this.app.items.length; i++) {
+        if (this.app.items[i].route === this.app.currentItem.route && i !== 0) {
+          return this.app.items[i - 1].route;
+        }
+      }
+      return null;
+    };
+
   }]);
 
   app.controller('DetailsController', ['$scope', '$location', 'filterFilter', 'Work', function ($scope, $location, filterFilter, Work) {
