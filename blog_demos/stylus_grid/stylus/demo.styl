@@ -1,0 +1,53 @@
+@import 'jeet'
+
+
+
+*
+  box-sizing border-box
+
+
+
+// For Demo Styles only
+[class^="col-"], [class^="span-"], [class^="static-col-"], [class^="static-span-"]
+  background #eee
+  border 1px #ddd solid
+
+
+
+// The Grid
+$totalColumns = 12
+
+.row
+  cf()
+
+
+
+// Variable Columns
+for i in (1..$totalColumns)
+  .col-{i}
+    width 100%
+
+for i in (1..$totalColumns)
+  .span-{i}
+    width 100%
+
+// Static Columns
+for i in (1..$totalColumns)
+  .static-col-{i}
+    col(i /$totalColumns, gutter: 2)
+
+for i in (1..$totalColumns)
+  .static-span-{i}
+    span(i /$totalColumns)
+
+
+
+// Variable Columns
+@media screen and (min-width: 768px)
+  for i in (1..$totalColumns)
+    .col-{i}
+      col(i /$totalColumns, gutter: 2)
+
+  for i in (1..$totalColumns)
+    .span-{i}
+      span(i /$totalColumns)

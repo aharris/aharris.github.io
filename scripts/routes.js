@@ -52,6 +52,14 @@
           leave: 'leave-bottom'
         }
       })
+      .when('/stylus_grid', {
+        templateUrl : 'templates/blog_posts/stylus_grid.html',
+        controller: 'AppController',
+        animations: {
+          enter: 'enter-bottom',
+          leave: 'leave-bottom'
+        }
+      })
       .when('/:workRoute', {
         templateUrl : 'templates/work_details.html',
         controller: 'AppController',

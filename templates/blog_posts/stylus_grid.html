@@ -1,0 +1,245 @@
+<div class="content blog">
+  <div class="wrapper">
+
+    <a href="#!/" class="close">Close</a>
+
+    <h2>A Simple Grid Using Stylus and Jeet</h2>
+    <h3>1-5-2015</h3>
+
+    <article class="blog-post">
+      <div class="post-date">1-5-2015</div>
+
+      <div class="article-inner">
+
+        <h4>The goal</h4>
+        <p>To create a simple, custom grid system of dynamically generated classes.</p>
+
+        <h4>Why?</h4>
+        <p>To keep or stylus <a href="#">DRY</a> and because I am to lazy to right all of these classes out manually.</p>
+
+        <h4>Demo</h4>
+        <a href="blog_demos/stylus_grid/index.html" target="_blank">View Demo</a>
+
+        <h4>Prerequisites</h4>
+        <p>If you are not familiar with stylus and/or Jeet please follow the following links to get set up</p>
+        <ul>
+          <li><a href="http://learnboost.github.io/stylus/" target="_blank">Stylus</a></li>
+          <li><a href="http://jeet.gs/" target="_blank">Jeet</a> (We are only using Jeet for the "col" mixin in this demo)</li>
+        </ul>
+
+        <h4>How To:</h4>
+        <p>Once you have stylus and Jeet set up we can begin generating classes that can be used throughout our html.</p>
+        <p>We will start by defining how many columns we want in our grid</p>
+        <div hljs>
+          $totalColumns = 12
+        </div>
+        <p>In this example we will set our max columns to 12</p>
+        <hr/>
+        <br/>
+
+        <p>Now it is time to create a for loop that will actually generate the classes we want</p>
+        <div hljs>
+          for i in (1..$totalColumns)
+            .col-{i}
+              col(i /$totalColumns, gutter: 2) // Jeet Mixin
+        </div>
+
+        <p>Generated CSS:</p>
+        <div hljs>
+          .col-1 {
+            *zoom: 1;
+            float: left;
+            clear: none;
+            text-align: inherit;
+            width: 6.499999999999966%;
+            margin-left: 0%;
+            margin-right: 2%;
+          }
+          .col-1:before,
+          .col-1:after {
+            content: '';
+            display: table;
+          }
+          .col-1:after {
+            clear: both;
+          }
+          .col-1:last-child {
+            margin-right: 0%;
+          }
+          .col-2 {
+            *zoom: 1;
+            float: left;
+            clear: none;
+            text-align: inherit;
+            width: 15.000000000000034%;
+            margin-left: 0%;
+            margin-right: 2%;
+          }
+          .col-2:before,
+          .col-2:after {
+            content: '';
+            display: table;
+          }
+          .col-2:after {
+            clear: both;
+          }
+          .col-2:last-child {
+            margin-right: 0%;
+          }
+
+          /* ... Repeated to .col-12  */
+        </div>
+        <hr/>
+        <br/>
+
+        <p>If we do not want to have gutters between our columns Jeet has another mixin we can use for that and we can use the same for loop to create those classes.</p>
+
+        <div hljs>
+          for i in (1..$totalColumns)
+            .span-{i}
+              span(i /$totalColumns)
+        </div>
+        <p>Generated CSS:</p>
+        <div hljs>
+          .span-1 {
+            *zoom: 1;
+            float: left;
+            clear: none;
+            text-align: inherit;
+            width: 8.3333333333333%;
+            margin-left: 0%;
+            margin-right: 0%;
+          }
+          .span-1:before,
+          .span-1:after {
+            content: '';
+            display: table;
+          }
+          .span-1:after {
+            clear: both;
+          }
+          .span-2 {
+            *zoom: 1;
+            float: left;
+            clear: none;
+            text-align: inherit;
+            width: 16.6666666666667%;
+            margin-left: 0%;
+            margin-right: 0%;
+          }
+          .span-2:before,
+          .span-2:after {
+            content: '';
+            display: table;
+          }
+          .span-2:after {
+            clear: both;
+          }
+
+          /* ... Repeated to .span-12  */
+        </div>
+        <hr/>
+        <br/>
+
+        <p>Now, Obviously most of the time we do not want our grids to remain consistent across all breakpoints. Using media queries we can update these classes depending on viewport size</p>
+
+        <div hljs>
+          for i in (1..$totalColumns)
+            .col-{i}
+              width 100%
+
+          for i in (1..$totalColumns)
+            .span-{i}
+              width 100%
+
+          @media screen and (min-width: 768px)
+            for i in (1..$totalColumns)
+              .col-{i}
+                col(i /$totalColumns, gutter: 2)
+
+            for i in (1..$totalColumns)
+              .span-{i}
+                span(i /$totalColumns)
+        </div>
+        <p>This allows our columns to be full width and stack on top of each other until we want them float up.</p>
+        <hr/>
+        <br/>
+
+        <p>Then again, sometimes we do want our grids to stay consistent across all breakpoints. In this case we can create another class to handle that.</p>
+
+        <div hljs>
+          for i in (1..$totalColumns)
+            .Static-col-{i}
+              col(i /$totalColumns, gutter: 2)
+
+          for i in (1..$totalColumns)
+            .Static-span-{i}
+              span(i /$totalColumns)
+        </div>
+        <hr/>
+        <br/>
+
+        <p>Once you put it all together you should end up with:</p>
+        <p class="note">*Notice we added box sizing and the Jeet clearfix mixin: cf(). This will keep rows from overflowing do to padding and borders and from overlapping if the row does not have a full width.</p>
+        <div hljs>
+          $totalColumns = 12
+
+          *
+            box-sizing border-box
+
+          .row
+            cf()
+
+
+
+          // Variable Columns
+          for i in (1..$totalColumns)
+            .col-{i}
+              width 100%
+
+          for i in (1..$totalColumns)
+            .span-{i}
+              width 100%
+
+          // Static Columns
+          for i in (1..$totalColumns)
+            .Static-col-{i}
+              col(i /$totalColumns, gutter: 2)
+
+          for i in (1..$totalColumns)
+            .Static-span-{i}
+              span(i /$totalColumns)
+
+
+
+          // Variable Columns
+          @media screen and (min-width: 768px)
+            for i in (1..$totalColumns)
+              .col-{i}
+                col(i /$totalColumns, gutter: 2)
+
+            for i in (1..$totalColumns)
+              .span-{i}
+                span(i /$totalColumns)
+        </div>
+
+        <p>Now sit back and be glad you did not type out the 900+ lines of CSS this would take without these great tools.</p>
+
+      </div>
+
+      <p class="signature">
+        <a href="https://twitter.com/busypixels" target="_blank">
+          -busyPixels
+        </a>
+      </p>
+
+    </article>
+
+    <dir-disqus class="custom-disqus" disqus-shortname="ashtonharris"
+       disqus-identifier="{{ identifier }}"
+       disqus-url="{{ url }}"
+       ready-to-bind="{{ contentLoaded }}" >
+    </dir-disqus>
+
+  </div>
+</div>
