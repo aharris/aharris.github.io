@@ -6,17 +6,18 @@
   "repository": "",
   "devDependencies": {
     "bower": "^1.3.1",
-    "grunt": "^0.4.5",
-    "grunt-contrib-stylus": "^0.20.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "http-server": "^0.6.1",
+    "gulp": "^3.8.10",
+    "gulp-clean": "^0.3.1",
+    "gulp-connect": "^2.2.0",
+    "gulp-stylus": "^2.0.x",
+    "gulp-watch": "^3.0.0",
     "jeet": "^6.1.2",
     "nib": "^1.0.4",
-    "rupture": "^0.4.0"
+    "rupture": "^0.4.0",
+    "run-sequence": "^1.0.2"
   },
   "scripts": {
-    "postinstall": "bower install",
-    "start": "http-server -p 8000"
+    "postinstall": "bower install"
   },
   "dependencies": {
     "lodash": "^2.4.1"
