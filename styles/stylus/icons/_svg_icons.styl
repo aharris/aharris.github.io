@@ -10,6 +10,7 @@
   height 74px
   overflow hidden
   margin 0 10px
+  transition .2s
   +above(768px)
     width 80px
     height 80px
@@ -754,11 +755,7 @@
 }
 .social-line:hover path.icon_shape {
   transform: scale(1,1);
-  /*animation-name*/
-  animation-name: burst;
-  /*animation-duration*/
-  animation-duration: .4s;
-  /*transform-origin*/
+  transition: .4s;
   transform-origin: 50% 50%;
 }
 
