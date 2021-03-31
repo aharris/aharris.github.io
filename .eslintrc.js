@@ -9,6 +9,12 @@ module.exports = {
     "sourceType": "module",
     "ecmaVersion": 8
   },
+  "ignorePatterns": [
+    "www/**",
+    "deprecated/**",
+    ".eslintrc.js",
+    "stencil.config.ts",
+  ],
   "env": {
     "jest": true
   },
