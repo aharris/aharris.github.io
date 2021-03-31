@@ -3,26 +3,38 @@
   "private": true,
   "version": "0.0.1",
   "description": "Stencil App Starter",
+  "watch": {
+    "update:styles": {
+      "patterns": [
+        "src/global/styles"
+      ],
+      "extensions": "sass",
+      "quiet": false
+    }
+  },
   "scripts": {
     "build": "stencil build",
     "lint": "eslint . --ext ts,tsx,js",
-    "start": "stencil build --dev --watch --serve",
+    "start": "concurrently \"stencil build --dev --watch --serve\" \"yarn watch\"",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "update:styles": "touch src/global/app.sass",
+    "watch": "npm-watch"
   },
   "devDependencies": {
-    "@stencil/core": "^2.0.0",
-    "@stencil/router": "^1.0.1",
-    "@stencil/sass": "^1.4.1",
-    "@types/jest": "^26.0.22",
-    "@typescript-eslint/eslint-plugin": "^4.20.0",
-    "@typescript-eslint/parser": "^4.20.0",
-    "eslint": "^7.23.0",
-    "typescript": "^4.2.3"
+    "@ey-studio-phl/eslint": "2.0.0",
+    "@stencil/core": "2.5.2",
+    "@stencil/router": "1.0.1",
+    "@stencil/sass": "1.4.1",
+    "@types/jest": "26.0.22",
+    "@typescript-eslint/eslint-plugin": "4.20.0",
+    "@typescript-eslint/parser": "4.20.0",
+    "concurrently": "6.0.0",
+    "eslint": "7.23.0",
+    "npm": "7.7.6",
+    "npm-watch": "0.9.0",
+    "typescript": "4.2.3"
   },
-  "license": "MIT",
-  "dependencies": {
-    "@ey-studio-phl/eslint": "^2.0.0"
-  }
+  "license": "MIT"
 }
