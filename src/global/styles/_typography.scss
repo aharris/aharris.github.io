@@ -1,0 +1,149 @@
+@mixin header {
+  color: var(--body-color);
+  font-family: var(--primary-font);
+  font-weight: var(--weight-bold);
+}
+
+@mixin h1 {
+  @include header;
+
+  font-size: var(--h1-font-size);
+  line-height: 1.2;
+}
+
+.h1 {
+  @include h1;
+}
+
+@mixin h2 {
+  @include header;
+
+  font-size: var(--h2-font-size);
+  line-height: 1.2;
+}
+
+.h2 {
+  @include h2;
+}
+
+@mixin h3 {
+  @include header;
+
+  font-size: var(--h3-font-size);
+  line-height: 1.5;
+}
+
+.h3 {
+  @include h3;
+}
+
+@mixin h4 {
+  @include header;
+
+  font-size: var(--h4-font-size);
+  line-height: 1.3;
+}
+
+.h4 {
+  @include h4;
+}
+
+@mixin h5 {
+  @include header;
+
+  font-size: var(--h5-font-size);
+  line-height: 1.25;
+}
+
+.h5 {
+  @include h5;
+}
+
+@mixin h6 {
+  @include header;
+
+  font-size: var(--h6-font-size);
+  line-height: 1.56;
+}
+
+.h6 {
+  @include h6;
+}
+
+// --------------------------------------------------
+// Subtitle styles
+// --------------------------------------------------
+
+@mixin subtitle {
+  color: var(--body-color);
+  font-family: var(--primary-font);
+  font-weight: var(--weight-medium);
+  font-size: var(--subtitle-size);
+  line-height: 1.56;
+}
+
+.subtitle {
+  @include subtitle;
+}
+
+@mixin subtitle-sm {
+  @include subtitle;
+
+  font-size: var(--subtitle-sm-size);
+  line-height: 1.57;
+}
+
+.subtitle-sm {
+  @include subtitle-sm;
+}
+
+// --------------------------------------------------
+// Copy styles
+// --------------------------------------------------
+
+@mixin body {
+  color: var(--body-color);
+  font-family: var(--primary-font);
+  font-weight: var(--weight-regular);
+  font-size: var(--font-size-base);
+  line-height: 1.56;
+}
+
+.body {
+  @include body;
+}
+
+@mixin body-sm {
+  @include body;
+
+  font-size: var(--font-size-sm);
+  line-height: 1.42;
+}
+
+.body-sm {
+  @include body-sm;
+}
+
+@mixin caption-copy {
+  @include body;
+
+  font-size: var(--caption-font-size);
+  line-height: 1.66;
+}
+
+.caption-copy {
+  @include caption-copy;
+}
+
+@mixin overline {
+  font-family: var(--primary-font);
+  font-weight: var(--weight-bold);
+  font-size: var(--overline-font-size);
+  line-height: 2;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+.overline {
+  @include overline;
+}

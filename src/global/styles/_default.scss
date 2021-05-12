@@ -1,0 +1,17 @@
+body {
+  background-color: var(--grey-500);
+  color: var(--white);
+  font-family: var(--primary-font);
+}
+
+.container {
+  max-width: 1400px;
+  padding: var(--padding);
+}
+
+
+@include mq(medium) {
+  .container {
+    padding: 50px;
+  }
+}

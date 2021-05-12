@@ -8,7 +8,7 @@
       "patterns": [
         "src/global/styles"
       ],
-      "extensions": "sass",
+      "extensions": "scss",
       "quiet": false
     }
   },
@@ -19,7 +19,7 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
-    "update:styles": "touch src/global/app.sass",
+    "update:styles": "touch src/global/app.scss",
     "watch": "npm-watch"
   },
   "devDependencies": {
@@ -34,6 +34,7 @@
     "eslint": "7.23.0",
     "npm": "7.7.6",
     "npm-watch": "0.9.0",
+    "sass-flex-grid": "1.0.8",
     "typescript": "4.2.3"
   },
   "license": "MIT"
