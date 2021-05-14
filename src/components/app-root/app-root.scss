@@ -10,6 +10,41 @@
 
   li {
     display: inline-block;
-    margin-left: 3em;
+    margin-left: 2em;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    padding: 0 1em;
+
+    &:hover {
+      color: var(--white);
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--body-color);
+        transform: rotate(5deg);
+      }
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--body-color);
+        transform: rotate(5deg);
+      }
+      text-decoration: line-through;
+    }
   }
 }
