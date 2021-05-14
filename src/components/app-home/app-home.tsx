@@ -1,4 +1,5 @@
 import { Component, h, State } from '@stencil/core';
+import { quotes } from '../../data/quotes';
 
 @Component({
   tag: 'app-home',
@@ -9,7 +10,7 @@ export class AppHome {
   @State() aSpotText: string = '';
 
   componentDidLoad() {
-    this.typeString('Apply constraints until an elegant solution remains');
+    this.typeString(this.getRandomQuote(quotes));
   }
 
   render() {
@@ -30,7 +31,7 @@ export class AppHome {
           </div>
         </div>
 
-        <p class="a-spot"> &gt; {this.aSpotText}<span class="blink">|</span></p>
+        <p class="a-spot">&gt; {this.aSpotText}<span class="blink">|</span></p>
 
         <h2 class="h1">
           Featured<br/>
@@ -39,6 +40,8 @@ export class AppHome {
       </div>
     );
   }
+
+  private getRandomQuote = (quotesList: string[]) => quotesList[Math.floor(Math.random() * quotesList.length)]
 
   private typeString(str: string) {
     this.aSpotText = '';

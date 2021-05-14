@@ -9,3 +9,5 @@
 - Add detail pages for each featured work item
 - Add blog?
 - Add logo link
+- Add quotes
+- Add ability to clear quotes (cmd + k)
