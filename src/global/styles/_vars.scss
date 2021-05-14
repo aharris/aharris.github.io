@@ -1,13 +1,29 @@
 :root {
   // Colors
   --white: #FFF;
+  --grey-100: #f7f7f7;
   --grey-500: #17181c;
+
+  // Color Usage
+  --bg-color: var(--grey-500);
+  --body-color: var(--grey-100);
 
   // Fonts
   --font-default: 'open_sansregular';
   --primary-font: 'noto_sans', 'Helvetica', 'Arial', sans-serif;
 
+  // Typography
+  --h1-font-size: 5rem; // Heading 1 font size.
+  --h2-font-size: 2.5rem; // Heading 2 font size.
+  --h3-font-size: 2rem; // Heading 3 font size.
+  --h4-font-size: 1.5rem; // Heading 4 font size.
+  --h5-font-size: 1.25rem; // Heading 5 font size.
+  --h6-font-size: 1rem; // Heading 6 font size.
+
+  --weight-regular: normal; // Regular font weight.
+  --weight-bold: bold; // Bold font weight.
+  --weight-medium: 500; // Medium font weight.
+
   // Spacing
   --padding: 8px;
-
 }
