@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, h, State } from '@stencil/core';
 
 @Component({
   tag: 'app-home',
@@ -6,6 +6,12 @@ import { Component, h } from '@stencil/core';
   shadow: false
 })
 export class AppHome {
+  @State() aSpotText: string = '';
+
+  componentDidLoad() {
+    this.typeString('Apply constraints until an elegant solution remains');
+  }
+
   render() {
     return (
       <div class="app-home container">
@@ -24,11 +30,29 @@ export class AppHome {
           </div>
         </div>
 
-        <h1 class="h1">
+        <p class="a-spot"> &gt; {this.aSpotText}<span class="blink">|</span></p>
+
+        <h2 class="h1">
           Featured<br/>
           Work
-        </h1>
+        </h2>
       </div>
     );
+  }
+
+  private typeString(str: string) {
+    this.aSpotText = '';
+
+    const textElements = str.split('');
+
+    const delay = 75;
+    const multiplier = 100;
+
+    textElements.forEach((letter, idx) => {
+      setTimeout(() => {
+        this.aSpotText += letter;
+      // eslint-disable-next-line no-mixed-operators
+      }, multiplier + idx * delay);
+    });
   }
 }
