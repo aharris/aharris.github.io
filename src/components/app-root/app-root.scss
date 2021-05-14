@@ -5,6 +5,22 @@
   align-items: center;
 }
 
+.lockup {
+  position: relative;
+}
+
+.name {
+  margin-bottom: 0;
+}
+
+.job-title {
+  font-family: 'open-sans';
+  font-weight: light;
+  font-style: italic;
+  position: absolute;
+  bottom: -18px;
+}
+
 .nav {
   list-style-type: none;
 

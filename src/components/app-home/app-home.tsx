@@ -13,7 +13,13 @@ export class AppHome {
   @State() showAuthor: boolean;
 
   componentDidLoad() {
+    const INTERVAL_TIME = 20000;
+
     this.typeString(this.getRandomQuote(quotes));
+
+    setInterval(() => {
+      this.typeString(this.getRandomQuote(quotes));
+    }, INTERVAL_TIME);
   }
 
   render() {
@@ -60,7 +66,7 @@ export class AppHome {
 
     const textElements = quoteObj.quote.split('');
 
-    const delay = 75;
+    const delay = 50;
     const multiplier = 100;
 
     textElements.forEach((letter, idx) => {

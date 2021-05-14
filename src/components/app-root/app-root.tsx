@@ -10,7 +10,10 @@ export class AppRoot {
     return (
       <div>
         <header class="container header">
-          <h1 class="h3">Ashton Harris</h1>
+          <div class="lockup">
+            <h1 class="h3 name">Ashton Harris</h1>
+            <h2 class="subtitle job-title">UX Tech Lead</h2>
+          </div>
 
           <nav>
             <ul class="nav">
