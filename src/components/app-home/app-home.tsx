@@ -1,5 +1,6 @@
 import { Component, h, State } from '@stencil/core';
 import { quotes } from '../../data/quotes';
+import { Quotes } from '../../models/quotes.model';
 
 @Component({
   tag: 'app-home',
@@ -8,6 +9,8 @@ import { quotes } from '../../data/quotes';
 })
 export class AppHome {
   @State() aSpotText: string = '';
+  @State() aSpotAuthor: string = '';
+  @State() showAuthor: boolean;
 
   componentDidLoad() {
     this.typeString(this.getRandomQuote(quotes));
@@ -31,7 +34,13 @@ export class AppHome {
           </div>
         </div>
 
-        <p class="a-spot">&gt; {this.aSpotText}<span class="blink">|</span></p>
+        <div class="a-spot">
+          <p class="quote">&gt; {this.aSpotText}<span class="blink">|</span></p>
+          <p class={{
+            author: true,
+            show: this.showAuthor
+          }}>-- {this.aSpotAuthor}</p>
+        </div>
 
         <h2 class="h1">
           Featured<br/>
@@ -41,12 +50,15 @@ export class AppHome {
     );
   }
 
-  private getRandomQuote = (quotesList: string[]) => quotesList[Math.floor(Math.random() * quotesList.length)]
+  private getRandomQuote = (quotesList: Quotes[]) => quotesList[Math.floor(Math.random() * quotesList.length)]
 
-  private typeString(str: string) {
+
+  private typeString(quoteObj: Quotes) {
     this.aSpotText = '';
+    this.aSpotAuthor = quoteObj.author;
+    this.showAuthor = false;
 
-    const textElements = str.split('');
+    const textElements = quoteObj.quote.split('');
 
     const delay = 75;
     const multiplier = 100;
@@ -54,6 +66,11 @@ export class AppHome {
     textElements.forEach((letter, idx) => {
       setTimeout(() => {
         this.aSpotText += letter;
+
+        if (idx === textElements.length - 1) {
+          this.showAuthor = true;
+        }
+
       // eslint-disable-next-line no-mixed-operators
       }, multiplier + idx * delay);
     });

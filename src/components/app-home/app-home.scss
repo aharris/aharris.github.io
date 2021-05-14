@@ -19,8 +19,24 @@
 }
 
 .a-spot {
+  min-height: 500px;
+  margin: calc(var(--rhythm) * 30) 0 calc(var(--rhythm) * 20);
+}
+
+.quote {
   font-size: 5em;
-  margin: 3em 0;
+}
+
+.author {
+  font-size: 2em;
+  margin-right: 10em;
+  opacity: 0;
+  transition: opacity var(--ease-in-out-slow);
+  text-align: right;
+
+  &.show {
+    opacity: .5;
+  }
 }
 
 .blink {

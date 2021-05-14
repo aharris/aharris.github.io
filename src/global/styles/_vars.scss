@@ -29,4 +29,11 @@
 
   // Spacing
   --padding: 8px;
+  --rhythm: 8px;
+
+  // Transitions
+  --ease-in-out: 300ms ease-in-out; // Default transition
+  --ease-in-out-slow: 600ms ease-in-out; // Default transition
+  --ease-in-out-fast: 150ms ease-in-out; // Fast transtition
+  --ease-in-out-expo: cubic-bezier(1, 0, 0, 1); // Exponential transition
 }
