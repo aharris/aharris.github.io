@@ -1,3 +1,7 @@
+// Mist Colors
+$mistColor1: rgba(255, 255, 255, .05);
+$mistColor2: rgba(255, 255, 255, 0);
+
 body {
   background-color: var(--bg-color);
   color: var(--font-color);
@@ -10,6 +14,49 @@ body {
   padding: var(--padding);
 }
 
+.mist {
+  background-size: 200%;
+  background-position: 0 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+  left: 0;
+}
+
+.mist1 {
+  background: repeating-linear-gradient(90deg, $mistColor2, $mistColor1, $mistColor2);
+  animation: layer1 20s linear infinite alternate;
+}
+
+.mist2 {
+  background: repeating-linear-gradient(90deg, $mistColor2, $mistColor1, $mistColor2);
+  animation: layer2 30s linear infinite alternate;
+}
+
+@keyframes layer1 {
+  0% {
+    background-position: 1000px 0;
+  }
+  50% {
+    background-position: 500px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes layer2 {
+  0% {
+    background-position: 0 0%;
+  }
+  50% {
+    background-position: 500px 0%;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
 
 @include mq(medium) {
   .container {

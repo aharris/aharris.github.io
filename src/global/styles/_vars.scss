@@ -1,10 +1,13 @@
 :root {
   // Colors
   --white: #FFF;
+  --black: #000;
   --grey-100: #f7f7f7;
-  --grey-500: #17181c;
+  --grey-500: #0c0c0c;
+  --grey-900: #1a1a1a;
 
   // Color Usage
+  // --bg-color: var(--grey-900);
   --bg-color: var(--grey-500);
   --body-color: var(--grey-100);
 
