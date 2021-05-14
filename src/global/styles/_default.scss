@@ -4,12 +4,16 @@ $mistColor2: rgba(255, 255, 255, 0);
 
 body {
   background-color: var(--bg-color);
-  color: var(--font-color);
+  color: var(--body-color);
   font-family: var(--primary-font);
 }
 
+a {
+  color: var(--white);
+}
+
 .container {
-  max-width: 1400px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: var(--padding);
 }
@@ -35,6 +39,13 @@ body {
   animation: layer2 30s linear infinite alternate;
 }
 
+@include mq(medium) {
+  .container {
+    padding-left: calc(var(--padding) * 3);
+    padding-right: calc(var(--padding) * 3);
+  }
+}
+
 @keyframes layer1 {
   0% {
     background-position: 1000px 0;
@@ -55,11 +66,5 @@ body {
   }
   100% {
     background-position: 1000px 0;
-  }
-}
-
-@include mq(medium) {
-  .container {
-    padding: calc(var(--padding) * 3);
   }
 }

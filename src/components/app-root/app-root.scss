@@ -1,0 +1,15 @@
+.header {
+  border-bottom: 1px solid var(--body-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  list-style-type: none;
+
+  li {
+    display: inline-block;
+    margin-left: 3em;
+  }
+}

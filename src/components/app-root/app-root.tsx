@@ -9,8 +9,22 @@ export class AppRoot {
   render() {
     return (
       <div>
-        <header class="container">
+        <header class="container header">
           <h1 class="h3">Ashton Harris</h1>
+
+          <nav>
+            <ul class="nav">
+              <li>
+                <a href="#">Featured Work</a>
+              </li>
+              <li>
+                <a href="#">Clients</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </header>
 
         <main>
@@ -21,6 +35,10 @@ export class AppRoot {
             </stencil-route-switch>
           </stencil-router>
         </main>
+
+        <footer>
+          Insert Footer
+        </footer>
       </div>
     );
   }
