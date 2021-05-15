@@ -24,34 +24,38 @@ export class AppHome {
 
   render() {
     return (
-      <div class="app-home container">
-        {/* <p>
-          Welcome to the Stencil App Starter. You can use this starter to build entire apps all with web components using Stencil! Check out our docs on{' '}
-          <a href="https://stenciljs.com">stenciljs.com</a> to get started.
-        </p>
+      <div>
+        <div class="app-home container">
+          {/* <p>
+            Welcome to the Stencil App Starter. You can use this starter to build entire apps all with web components using Stencil! Check out our docs on{' '}
+            <a href="https://stenciljs.com">stenciljs.com</a> to get started.
+          </p>
 
-        <stencil-route-link url="/profile/stencil">
-          <button>Profile page</button>
-        </stencil-route-link> */}
+          <stencil-route-link url="/profile/stencil">
+            <button>Profile page</button>
+          </stencil-route-link> */}
 
-        <div class="logo-wrap">
-          <div class="logo">
-            AH
+          <div class="logo-wrap">
+            <div class="logo">
+              AH
+            </div>
           </div>
+
+          <div class="a-spot">
+            <p class="quote">&gt; {this.aSpotText}<span class="blink">|</span></p>
+            <p class={{
+              author: true,
+              show: this.showAuthor
+            }}>-- {this.aSpotAuthor}</p>
+          </div>
+
+          <h2 class="h1">
+            Featured<br/>
+            Work
+          </h2>
         </div>
 
-        <div class="a-spot">
-          <p class="quote">&gt; {this.aSpotText}<span class="blink">|</span></p>
-          <p class={{
-            author: true,
-            show: this.showAuthor
-          }}>-- {this.aSpotAuthor}</p>
-        </div>
-
-        <h2 class="h1">
-          Featured<br/>
-          Work
-        </h2>
+        <app-clients></app-clients>
       </div>
     );
   }
