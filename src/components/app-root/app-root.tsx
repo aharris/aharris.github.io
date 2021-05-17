@@ -9,6 +9,12 @@ export class AppRoot {
   render() {
     return (
       <div>
+        <div class="logo-wrap">
+          <div class="logo">
+            AH
+          </div>
+        </div>
+
         <header class="container header">
           <div class="lockup">
             <h1 class="h3 name">Ashton Harris</h1>

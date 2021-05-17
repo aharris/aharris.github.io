@@ -1,10 +1,31 @@
+@import '../../../node_modules/sass-flex-grid/index.scss';
 @import '../../global/styles/mixins';
+@import '../../global/styles/typography';
 
 .header {
   border-bottom: 1px solid var(--body-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo-wrap {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.logo {
+  @include header;
+  @include center();
+  position: fixed;
+
+  font-size: 50vw;
+  font-weight: 500;
+  letter-spacing: -10vw;
+  opacity: .02;
 }
 
 .lockup {
@@ -48,5 +69,12 @@
       }
       text-decoration: line-through;
     }
+  }
+}
+
+@include mq(extra-large) {
+  .logo {
+    font-size: 50em;
+    letter-spacing: -163px;
   }
 }

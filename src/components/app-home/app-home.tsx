@@ -35,12 +35,6 @@ export class AppHome {
             <button>Profile page</button>
           </stencil-route-link> */}
 
-          <div class="logo-wrap">
-            <div class="logo">
-              AH
-            </div>
-          </div>
-
           <div class="a-spot">
             <p class="quote">&gt; {this.aSpotText}<span class="blink">|</span></p>
             <p class={{
