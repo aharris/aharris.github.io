@@ -1,10 +1,12 @@
-.work-thumb-wrap {
-  // max-width: 600px;
-  // max-height: 600px;
-
+.work-thumb-col {
   &:nth-child(even) {
-    margin-top: -300px;
+    position: relative;
+    top: -300px;
   }
+}
+
+.work-thumb-wrap {
+  position: relative;
 
   img {
     transition: all var(--ease-in-out-fast);
@@ -20,5 +22,14 @@
       opacity: 1;
     }
   }
+}
 
+.work-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 1em;
+  background-color: rgba(0,0,0, .5);
+  text-decoration: none;
+  transform: skewY(-1.5deg);
 }

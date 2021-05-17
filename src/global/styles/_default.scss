@@ -2,6 +2,10 @@
 $mistColor1: rgba(255, 255, 255, .1);
 $mistColor2: rgba(255, 255, 255, 0);
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--body-color);
@@ -19,7 +23,7 @@ img {
 
 .container {
   max-width: 1800px;
-  margin: 0 auto;
+  margin: 0 auto calc(var(--rhythm) * 20);
   padding: var(--padding);
 }
 

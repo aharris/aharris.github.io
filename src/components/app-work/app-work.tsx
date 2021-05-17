@@ -15,12 +15,18 @@ export class AppWork {
           Work
         </h2>
         <div class="row work-thumb-row">
-          <a href="#" class="work-thumb-wrap col-xs">
-            <img src="assets/images/wcg_thumb.jpg" alt="WCG" />
-          </a>
-          <a href="#" class="work-thumb-wrap col-xs">
-            <img src="assets/images/wcg_thumb.jpg" alt="WCG" />
-          </a>
+          <div class="col-xs work-thumb-col">
+            <a href="#" class="work-thumb-wrap">
+              <img src="assets/images/thumbs/motif.jpg" alt="EY Motif Design System" />
+              <h3 class="work-title">EY Motif Design System</h3>
+            </a>
+          </div>
+          <div class="col-xs work-thumb-col">
+            <a href="#" class="work-thumb-wrap ">
+              <img src="assets/images/thumbs/wcg.jpg" alt="WIRB-Copernicus Group" />
+              <h3 class="work-title">WIRB-Copernicus Group</h3>
+            </a>
+          </div>
         </div>
       </div>
     );
