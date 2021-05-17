@@ -18,6 +18,18 @@ a {
   padding: var(--padding);
 }
 
+.section-heading {
+  position: relative;
+  width: fit-content;
+  margin-bottom: calc(var(--rhythm) * 10);
+  &:before {
+    @include angle(top, 5, 2);
+  }
+  &:after {
+    @include angle(bottom, 5, 2);
+  }
+}
+
 .mist {
   background-size: 200%;
   background-position: 0 50%;

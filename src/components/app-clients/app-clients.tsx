@@ -25,7 +25,7 @@ export class AppClients {
           <li>Barclays</li>
           <li>Blue Mountain</li>
           <li>Boehringer Ingelheim</li>
-          <li><a href="/breathless">Breathless</a></li>
+          <li>Breathless</li>
           <li>Carrier</li>
           <li>Celebrity Cruises</li>
           <li>Comcast</li>
@@ -36,13 +36,13 @@ export class AppClients {
           <li>Flamingo Beach Resort &amp; Spa</li>
           <li>Keating's River Grill</li>
           <li>KeyLime Cove</li>
-          <li><a href="#!/liberty_global">Liberty Global</a></li>
+          <li>Liberty Global</li>
           <li>Maritz</li>
-          <li><a href="#!/media_giraffes">Media Giraffes</a></li>
+          <li>Media Giraffes</li>
           <li>MetTel</li>
           <li>MMA MarketLink</li>
           <li>Mobile Monday</li>
-          <li><a href="#!/movitas">Movitas</a></li>
+          <li>Movitas</li>
           <li>Nintendo</li>
           <li>Nocturnal Skate Shop</li>
           <li>O'Malley's Pub'</li>
@@ -53,7 +53,7 @@ export class AppClients {
           <li>Rock & Roll Hall of Fame</li>
           <li>Royal Caribbean International</li>
           <li>Saint Clare's Health System</li>
-          <li><a href="#!/secrets">Secrets Resort's and Spa</a></li>
+          <li>Secrets Resort's and Spa</li>
           <li>Shawnee Mountain</li>
           <li>Sheraton</li>
           <li>Sports Core</li>
@@ -63,7 +63,7 @@ export class AppClients {
           <li>The Closet Therapy</li>
           <li>The Shawnee Inn</li>
           <li>The Source</li>
-          <li><a href="#!/traveler_connect">Traveler Connect</a></li>
+          <li>Traveler Connect</li>
           <li>Wialan</li>
           <li>WIRB-Copernicus Group, Inc.</li>
         </ul>

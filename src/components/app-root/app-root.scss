@@ -1,3 +1,5 @@
+@import '../../global/styles/mixins';
+
 .header {
   border-bottom: 1px solid var(--body-color);
   display: flex;
@@ -39,26 +41,10 @@
       color: var(--white);
 
       &:before {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 2px;
-        background-color: var(--body-color);
-        transform: rotate(5deg);
+        @include angle(top, 5, 2);
       }
       &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 2px;
-        background-color: var(--body-color);
-        transform: rotate(5deg);
+        @include angle(bottom, 5, 2);
       }
       text-decoration: line-through;
     }
