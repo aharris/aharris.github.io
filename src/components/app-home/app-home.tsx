@@ -48,13 +48,10 @@ export class AppHome {
               show: this.showAuthor
             }}>-- {this.aSpotAuthor}</p>
           </div>
-
-          <h2 class="h1">
-            Featured<br/>
-            Work
-          </h2>
         </div>
 
+
+        <app-work></app-work>
         <app-clients></app-clients>
       </div>
     );

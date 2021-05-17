@@ -7,13 +7,10 @@ import { Component, h } from '@stencil/core';
   shadow: false
 })
 export class AppClients {
-  componentDidLoad() {
-  }
-
   render() {
     return (
       <div class="app-clients container">
-        <h2 class="h1">Clients</h2>
+        <h2 class="h1 section-heading">Clients</h2>
 
         <ul class="client-list">
           <li>Allin Interactive Latin America</li>
@@ -50,7 +47,7 @@ export class AppClients {
           <li>Pocono Mountains</li>
           <li>Psychic Source</li>
           <li>Quick Chek</li>
-          <li>Rock & Roll Hall of Fame</li>
+          <li>Rock &amp; Roll Hall of Fame</li>
           <li>Royal Caribbean International</li>
           <li>Saint Clare's Health System</li>
           <li>Secrets Resort's and Spa</li>
