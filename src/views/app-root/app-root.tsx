@@ -15,26 +15,7 @@ export class AppRoot {
           </div>
         </div>
 
-        <header class="container header">
-          <div class="lockup">
-            <h1 class="h3 name">Ashton Harris</h1>
-            <h2 class="subtitle job-title">UX Tech Lead</h2>
-          </div>
-
-          <nav>
-            <ul class="nav">
-              <li>
-                <a href="#">Featured Work</a>
-              </li>
-              <li>
-                <a href="#">Clients</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <app-header></app-header>
 
         <main>
           <stencil-router>

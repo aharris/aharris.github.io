@@ -1,7 +1,6 @@
 # Ashton Harris' Portfolio
 
 ## TODO
-- Scale bg logo
 - Add Featured Work Section to home page
 - Add Client List to home page
 - Add Contact info to home page
@@ -11,3 +10,4 @@
 - Add logo link
 - Add quotes
 - Add ability to clear quotes (cmd + k)
+- Add telenet

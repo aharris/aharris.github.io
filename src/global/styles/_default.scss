@@ -10,6 +10,7 @@ body {
   background-color: var(--bg-color);
   color: var(--body-color);
   font-family: var(--primary-font);
+  margin: 0 var(--padding);
 }
 
 a {
@@ -24,7 +25,8 @@ img {
 .container {
   max-width: 1800px;
   margin: 0 auto calc(var(--rhythm) * 20);
-  padding: var(--padding);
+  padding-left: var(--padding);
+  padding-right: var(--padding);
 }
 
 .section-heading {
@@ -55,6 +57,10 @@ img {
 }
 
 @include mq(medium) {
+  body {
+    margin: 0 calc(var(--padding) * 3);
+  }
+
   .container {
     padding-left: calc(var(--padding) * 3);
     padding-right: calc(var(--padding) * 3);
