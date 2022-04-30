@@ -20,7 +20,7 @@ export class AppWork {
         <div class="row work-thumb-row">
           {work.map((project: Work) => {
             return <div class="col-xs work-thumb-col">
-            <a href="#" class="work-thumb-wrap">
+            <a href={'work/' + project.id} class="work-thumb-wrap">
               <img src={project.thumb} alt={project.name} />
               <h3 class="work-title">{project.name}</h3>
             </a>

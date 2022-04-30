@@ -14,7 +14,7 @@ export class AppHeader {
           <div class="col-xs-12 col-md-6">
             <div class="lockup">
               <h1 class="h3 name">Ashton Harris</h1>
-              <h2 class="subtitle job-title">UX Tech Lead</h2>
+              <h2 class="subtitle job-title">UX Software Architect</h2>
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
