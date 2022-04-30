@@ -1,5 +1,7 @@
 import { Component, h } from '@stencil/core';
 
+import { work } from '../../data/work';
+import { Work } from '../../models/work.model';
 
 @Component({
   tag: 'app-work',
@@ -14,19 +16,16 @@ export class AppWork {
           Featured<br />
           Work
         </h2>
+
         <div class="row work-thumb-row">
-          <div class="col-xs work-thumb-col">
+          {work.map((project: Work) => {
+            return <div class="col-xs work-thumb-col">
             <a href="#" class="work-thumb-wrap">
-              <img src="assets/images/thumbs/motif.jpg" alt="EY Motif Design System" />
-              <h3 class="work-title">EY Motif Design System</h3>
+              <img src={project.thumb} alt={project.name} />
+              <h3 class="work-title">{project.name}</h3>
             </a>
           </div>
-          <div class="col-xs work-thumb-col">
-            <a href="#" class="work-thumb-wrap ">
-              <img src="assets/images/thumbs/wcg.jpg" alt="WIRB-Copernicus Group" />
-              <h3 class="work-title">WIRB-Copernicus Group</h3>
-            </a>
-          </div>
+          })}
         </div>
       </div>
     );
