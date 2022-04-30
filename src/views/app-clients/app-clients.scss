@@ -5,5 +5,16 @@
 
   li {
     margin-bottom: 1em;
+
+    a {
+      font-weight: var(--weight-bold);
+      font-size: var(--h5-font-size);
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
   }
 }

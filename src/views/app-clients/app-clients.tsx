@@ -28,7 +28,7 @@ export class AppClients {
           <li>Comcast</li>
           <li>Corteva Agriscience</li>
           <li>Dreams Resort and Spa</li>
-          <li>EY</li>
+          <li><a href="work/motif">EY</a></li>
           <li>First Key Creations</li>
           <li>Flamingo Beach Resort &amp; Spa</li>
           <li>Keating's River Grill</li>
@@ -61,7 +61,7 @@ export class AppClients {
           <li>The Source</li>
           <li>Traveler Connect</li>
           <li>Wialan</li>
-          <li>WIRB-Copernicus Group, Inc.</li>
+          <li><a href="work/wcg">WCG IRB</a></li>
         </ul>
       </div>
     );
