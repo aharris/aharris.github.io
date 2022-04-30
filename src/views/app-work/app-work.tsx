@@ -11,7 +11,7 @@ import { Work } from '../../models/work.model';
 export class AppWork {
   render() {
     return (
-      <div class="app-work container">
+      <div id="work" class="app-work container">
         <h2 class="h1 section-heading">
           Featured<br />
           Work

@@ -9,7 +9,7 @@ import { Component, h } from '@stencil/core';
 export class AppClients {
   render() {
     return (
-      <div class="app-clients container">
+      <div id="clients" class="app-clients container">
         <h2 class="h1 section-heading">Clients</h2>
 
         <ul class="client-list">

@@ -21,13 +21,13 @@ export class AppHeader {
             <nav>
               <ul class="nav">
                 <li>
-                  <a href="#">Featured Work</a>
+                  <a href="/#work">Featured Work</a>
                 </li>
                 <li>
-                  <a href="#">Clients</a>
+                  <a href="/#clients">Clients</a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="/#contact">Contact</a>
                 </li>
               </ul>
             </nav>
