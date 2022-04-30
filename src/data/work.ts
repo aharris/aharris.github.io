@@ -7,7 +7,7 @@ export const work: Work[] = [
     id: 'motif'
   },
   {
-    name: "IRB-Copernicus Group",
+    name: "wcg IRB Connexus",
     thumb: "assets/images/thumbs/wcg.jpg",
     id: 'wcg'
   }
