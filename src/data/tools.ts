@@ -1,4 +1,8 @@
 export const tools = {
+  abstract: {
+    img: '/assets/images/tools/abstract.png',
+    name: 'Abstract'
+  },
   angular: {
     img: '/assets/images/tools/angular.png',
     name: 'Angular'

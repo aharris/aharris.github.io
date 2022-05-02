@@ -18,11 +18,15 @@ export const work: Work[] = [
     ]
   },
   {
-    name: "wcg IRB Connexus",
+    name: "WCG IRB Connexus",
     thumb: "assets/images/thumbs/wcg.jpg",
     id: 'wcg',
-    image: '',
-    tools: [],
-    description: ['']
+    image: '/assets/images/work/wcg/large.png',
+    tools: [
+      'angular',
+      'sketch',
+      'abstract'
+    ],
+    description: ['Lead architect for the development of a fully responsive clinical trial submission application. Involved complex data integrations and form flows for the various types of clinical trial options. Worked closely with client developers to train and advise on best practices and technologies.']
   }
 ];
