@@ -24,7 +24,7 @@ img {
 
 .container {
   max-width: 1800px;
-  margin: 0 auto calc(var(--rhythm) * 20);
+  margin: 0 auto calc(var(--rhythm) * 5);
   padding-left: var(--padding);
   padding-right: var(--padding);
 }
@@ -54,6 +54,12 @@ img {
 .mist2 {
   background: repeating-linear-gradient(90deg, $mistColor2, $mistColor1, $mistColor2);
   animation: layer2 30s linear infinite alternate;
+}
+
+@for $i from 1 to 10 {
+  .rhythm-#{$i} {
+    margin-bottom: calc(var(--rhythm) * #{$i});
+  }
 }
 
 @include mq(medium) {

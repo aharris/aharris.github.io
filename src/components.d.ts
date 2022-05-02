@@ -18,6 +18,9 @@ export namespace Components {
     }
     interface AppRoot {
     }
+    interface AppToolCard {
+        "tool": string;
+    }
     interface AppWork {
     }
     interface AppWorkDetails {
@@ -55,6 +58,12 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLAppToolCardElement extends Components.AppToolCard, HTMLStencilElement {
+    }
+    var HTMLAppToolCardElement: {
+        prototype: HTMLAppToolCardElement;
+        new (): HTMLAppToolCardElement;
+    };
     interface HTMLAppWorkElement extends Components.AppWork, HTMLStencilElement {
     }
     var HTMLAppWorkElement: {
@@ -73,6 +82,7 @@ declare global {
         "app-home": HTMLAppHomeElement;
         "app-profile": HTMLAppProfileElement;
         "app-root": HTMLAppRootElement;
+        "app-tool-card": HTMLAppToolCardElement;
         "app-work": HTMLAppWorkElement;
         "app-work-details": HTMLAppWorkDetailsElement;
     }
@@ -89,6 +99,9 @@ declare namespace LocalJSX {
     }
     interface AppRoot {
     }
+    interface AppToolCard {
+        "tool"?: string;
+    }
     interface AppWork {
     }
     interface AppWorkDetails {
@@ -100,6 +113,7 @@ declare namespace LocalJSX {
         "app-home": AppHome;
         "app-profile": AppProfile;
         "app-root": AppRoot;
+        "app-tool-card": AppToolCard;
         "app-work": AppWork;
         "app-work-details": AppWorkDetails;
     }
@@ -113,6 +127,7 @@ declare module "@stencil/core" {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "app-tool-card": LocalJSX.AppToolCard & JSXBase.HTMLAttributes<HTMLAppToolCardElement>;
             "app-work": LocalJSX.AppWork & JSXBase.HTMLAttributes<HTMLAppWorkElement>;
             "app-work-details": LocalJSX.AppWorkDetails & JSXBase.HTMLAttributes<HTMLAppWorkDetailsElement>;
         }

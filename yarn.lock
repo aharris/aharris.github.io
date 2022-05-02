@@ -2943,10 +2943,10 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sass-flex-grid@1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/sass-flex-grid/-/sass-flex-grid-1.0.8.tgz#6260245077b3da6a81d9db6e8074c06fc85f36b1"
-  integrity sha512-0GW5PNtO/XSQmhH5EX0a/XwgvRltCJwuIHZ+n5PPNktpBQiLgkIbG4uH1Do3JG4MCihGFTQZmwObZaeIzL59LA==
+sass-flex-grid@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/sass-flex-grid/-/sass-flex-grid-2.0.1.tgz#5a96f94f4902564d86062d13ada187af18316eb7"
+  integrity sha512-e2lWFvRUQEteF+Xgs5qGwMCWWFGp8DnVTyLkhrcLbZPOZfWG9sesVDcUSn+kQJi1yXFz6PCDgHNB2GKaN+mwBA==
 
 semver-diff@^3.1.1:
   version "3.1.1"

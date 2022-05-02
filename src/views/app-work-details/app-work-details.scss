@@ -1,0 +1,23 @@
+.image {
+  position: relative;
+  margin-bottom: calc(var(--rhythm) * 10);
+
+  img{
+    border-radius: var(--radius);
+  }
+}
+
+.work-title {
+  position: absolute;
+  left: 0;
+  top: calc(var(--rhythm) * 3);
+  padding: 1em;
+  background-color: rgba(0,0,0, .8);
+  text-decoration: none;
+  transform: skewY(-1.5deg);
+}
+
+.tools-list {
+  list-style: none;
+  padding: 0;
+}

@@ -15,11 +15,27 @@ export class AppWork {
 
   render() {
     return (
-      <div class="app-work container">
-        <h2 class="h1 section-heading">
-          {this.data.name}
-        </h2>
-      </div>
+      <section class="app-work container">
+        <div class="image">
+          <h1 class="h1 work-title">
+            {this.data.name}
+          </h1>
+
+          <img src={this.data.image} alt={this.data.name} />
+        </div>
+
+        <div class="tools">
+          <h2 class="h2">
+            Tools
+          </h2>
+
+          <ul class="tools-list row middle-xs">
+            {this.data.tools.map((tool: string) => <li class="col-xs-4 rhythm-2">
+              <app-tool-card tool={tool}></app-tool-card>
+            </li>)}
+          </ul>
+        </div>
+      </section>
     );
   }
 
