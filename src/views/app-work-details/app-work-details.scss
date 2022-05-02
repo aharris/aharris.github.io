@@ -21,3 +21,7 @@
   list-style: none;
   padding: 0;
 }
+
+.indent {
+  text-indent: calc(var(--padding) * 2);
+}

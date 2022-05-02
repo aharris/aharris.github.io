@@ -24,7 +24,17 @@ export class AppWork {
           <img src={this.data.image} alt={this.data.name} />
         </div>
 
-        <div class="tools">
+        <div class="description rhythm-9">
+          <h2 class="h2">
+            Description
+          </h2>
+
+          { this.data.description.map((paragraph: string) => <p class="indent">
+            {paragraph}
+          </p>)}
+        </div>
+
+        <div class="tools rhythm-9">
           <h2 class="h2">
             Tools
           </h2>

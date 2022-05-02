@@ -12,6 +12,9 @@ export const work: Work[] = [
       'stencil',
       'sketch',
       'zepelin'
+    ],
+    description: [
+      'Coordinated and architected the design, development and planning of EY’s Motif Design System in Angular, React and Web Components. Organized and ran training sessions with developers on how to utilize, maintain and enhance the tool. This tool is fully white-labelable through a robust library of CSS variables. It has full documentation covering all resources, components, layouts, full code coverage, and WCAG 2.1 accessibility reporting. Motif is currently being used to speed up design and development on multiple internal EY applications as well as major EY clients.'
     ]
   },
   {
@@ -19,6 +22,7 @@ export const work: Work[] = [
     thumb: "assets/images/thumbs/wcg.jpg",
     id: 'wcg',
     image: '',
-    tools: []
+    tools: [],
+    description: ['']
   }
 ];

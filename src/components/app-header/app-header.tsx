@@ -12,10 +12,10 @@ export class AppHeader {
       <header class="container header">
         <div class="row middle-md">
           <div class="col-xs-12 col-md-6">
-            <div class="lockup">
+            <a href="/" class="lockup">
               <h1 class="h3 name">Ashton Harris</h1>
               <h2 class="subtitle job-title">UX Software Architect</h2>
-            </div>
+            </a>
           </div>
           <div class="col-xs-12 col-md-6">
             <nav>

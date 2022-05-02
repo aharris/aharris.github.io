@@ -3,5 +3,6 @@ export class Work {
   thumb: string;
   id: string;
   image: string;
-  tools: string[]
+  tools: string[];
+  description: string[];
 }
