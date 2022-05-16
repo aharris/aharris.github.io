@@ -8,8 +8,16 @@
 @mixin h1 {
   @include header;
 
-  font-size: var(--h1-font-size);
+  font-size: calc(var(--h1-font-size) / 3);
   line-height: 1.2;
+
+  @include mq(medium) {
+    font-size: calc(var(--h1-font-size) / 2);
+  }
+
+  @include mq(large) {
+    font-size: var(--h1-font-size);
+  }
 }
 
 .h1 {

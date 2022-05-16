@@ -40,7 +40,7 @@ export class AppWork {
           </h2>
 
           <ul class="tools-list row middle-xs">
-            {this.data.tools.map((tool: string) => <li class="col-xs-4 rhythm-2">
+            {this.data.tools.map((tool: string) => <li class="col-xs-12 col-sm-6 col-md-4 rhythm-2">
               <app-tool-card tool={tool}></app-tool-card>
             </li>)}
           </ul>

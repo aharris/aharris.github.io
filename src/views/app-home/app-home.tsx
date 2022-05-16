@@ -26,15 +26,6 @@ export class AppHome {
     return (
       <div>
         <div class="app-home container">
-          {/* <p>
-            Welcome to the Stencil App Starter. You can use this starter to build entire apps all with web components using Stencil! Check out our docs on{' '}
-            <a href="https://stenciljs.com">stenciljs.com</a> to get started.
-          </p>
-
-          <stencil-route-link url="/profile/stencil">
-            <button>Profile page</button>
-          </stencil-route-link> */}
-
           <div class="a-spot">
             <p class="quote">&gt; {this.aSpotText}<span class="blink">|</span></p>
             <p class={{
@@ -44,9 +35,13 @@ export class AppHome {
           </div>
         </div>
 
+        <div class="rhythm-20">
+          <app-work></app-work>
+        </div>
 
-        <app-work></app-work>
-        <app-clients></app-clients>
+        <div class="rhythm-20">
+          <app-clients></app-clients>
+        </div>
       </div>
     );
   }

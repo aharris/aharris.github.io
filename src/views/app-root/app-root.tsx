@@ -26,9 +26,9 @@ export class AppRoot {
           </stencil-router>
         </main>
 
-        <footer>
+        {/* <footer>
           Insert Footer
-        </footer>
+        </footer> */}
       </div>
     );
   }
