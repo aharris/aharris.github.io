@@ -5,6 +5,7 @@
 - Add Client List to home page
 - Add Contact info to home page
 - Add footer
+- Update Favicon
 - Add detail pages for each featured work item
 - Add blog?
 - Add logo link

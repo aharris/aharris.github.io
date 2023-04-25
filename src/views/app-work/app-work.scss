@@ -1,9 +1,4 @@
-.work-thumb-col {
-  &:nth-child(even) {
-    position: relative;
-    top: -300px;
-  }
-}
+@import '../../../node_modules/sass-flex-grid/index.scss';
 
 .work-thumb-wrap {
   position: relative;
@@ -32,4 +27,13 @@
   background-color: rgba(0,0,0, .5);
   text-decoration: none;
   transform: skewY(-1.5deg);
+}
+
+@include mq(small) {
+  .work-thumb-col {
+    &:nth-child(even) {
+      position: relative;
+      top: -300px;
+    }
+  }
 }

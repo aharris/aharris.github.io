@@ -1,0 +1,21 @@
+.profile-pic-wrap {
+  padding: 4px;
+  max-width: 200px;
+  border: 2px solid rgba(255,255,255, .5);
+  border-radius: 500px;
+}
+
+.profile-pic {
+  border-radius: 500px;
+  display: block;
+}
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.svg-container {
+  margin-right: 8px;
+}

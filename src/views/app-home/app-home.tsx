@@ -42,6 +42,10 @@ export class AppHome {
         <div class="rhythm-20">
           <app-clients></app-clients>
         </div>
+
+        <div class="rhythm-20">
+          <app-footer></app-footer>
+        </div>
       </div>
     );
   }
