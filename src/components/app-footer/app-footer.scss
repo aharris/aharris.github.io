@@ -5,6 +5,12 @@
   border-radius: 500px;
 }
 
+footer {
+  .profile-pic-col {
+    max-width: 200px;
+  }
+}
+
 .profile-pic {
   border-radius: 500px;
   display: block;
@@ -13,9 +19,41 @@
 .footer-line {
   display: flex;
   align-items: center;
-  line-height: 1;
+  margin-bottom: var(--rhythm);
+}
+
+.footer-link {
+  &:focus,
+  &:hover {
+    .svg-container {
+      stroke: white;
+    }
+  }
 }
 
 .svg-container {
-  margin-right: 8px;
+  margin-right: var(--rhythm);
+  margin-top: var(--rhythm);
+  display: inline-block;
+
+  svg {
+    position: relative;
+    top: 2px;
+  }
+
+  &:focus,
+  &:hover {
+    color: white;
+    fill: white;
+    stroke: white;
+  }
+}
+
+.subtitle {
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
 }
