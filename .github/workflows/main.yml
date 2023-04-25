@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: [$default-branch]
+    branches: main
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -33,7 +33,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: aharris.github.io
+      url: http://aharris.github.io
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
