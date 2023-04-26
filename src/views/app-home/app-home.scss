@@ -1,0 +1,37 @@
+.a-spot {
+  min-height: 600px;
+  margin: calc(var(--rhythm) * 5) 0 calc(var(--rhythm) * 20);
+}
+
+.quote {
+  font-size: 5vw;
+}
+
+.author {
+  font-size: 2em;
+  margin-right: 10em;
+  opacity: 0;
+  transition: opacity var(--ease-in-out-slow);
+  text-align: right;
+
+  &.show {
+    opacity: .5;
+  }
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}

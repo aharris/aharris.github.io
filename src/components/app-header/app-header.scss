@@ -1,0 +1,69 @@
+@import '../../../node_modules/sass-flex-grid/index.scss';
+@import '../../global/styles/mixins';
+
+.header {
+  border-bottom: 1px solid var(--body-color);
+  align-items: center;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+.lockup {
+  position: relative;
+  text-decoration: none;
+
+  .name {
+    line-height: 1.2;
+  }
+}
+
+.job-title {
+  font-family: 'open-sans';
+  font-weight: light;
+  font-style: italic;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: calc(var(--rhythm) * 3);
+
+  li {
+    display: inline-block;
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    padding: 0 0;
+
+    &:hover {
+      color: var(--white);
+
+      &:before {
+        @include angle(top, 5, 2);
+      }
+      &:after {
+        @include angle(bottom, 5, 2);
+      }
+    }
+  }
+}
+
+@include mq(medium) {
+  .nav {
+    justify-content: flex-end;
+
+    li {
+      margin-left: 1em;
+    }
+
+    a {
+      padding: 0 1em;
+    }
+  }
+}

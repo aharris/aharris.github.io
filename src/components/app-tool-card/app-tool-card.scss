@@ -1,0 +1,22 @@
+.list-card {
+  border-radius: var(--radius);
+  background: var(--white);
+  display: flex;
+  align-items: center;
+
+  .image-wrap {
+    max-width: calc(var(--rhythm) * 8);
+    margin-right: calc(var(--padding) * 2);
+
+    img {
+      display: block;
+      border-radius: var(--radius);
+      box-shadow: 0px 0px 24px 0px var(--grey-900);
+    }
+  }
+
+  .tool-name {
+    color: var(--grey-900);
+  }
+
+}
