@@ -1,5 +1,7 @@
+@import '../../../node_modules/sass-flex-grid/index.scss';
+
 .a-spot {
-  min-height: 600px;
+  min-height: 100px;
   margin: calc(var(--rhythm) * 5) 0 calc(var(--rhythm) * 20);
 }
 
@@ -24,6 +26,20 @@
   -webkit-animation: blink-animation 1s steps(5, start) infinite;
 }
 
+@include mq(small) {
+  .a-spot {
+    min-height: 200px;
+  }
+
+}
+
+@include mq(medium) {
+  .a-spot {
+    min-height: 600px;
+  }
+
+}
+
 @keyframes blink-animation {
   to {
     visibility: hidden;
@@ -35,3 +51,4 @@
     visibility: hidden;
   }
 }
+

@@ -1,6 +1,8 @@
+@import '../../../node_modules/sass-flex-grid/index.scss';
+
 .client-list {
   list-style: none;
-  column-count: 4;
+  column-count: 1;
 
 
   li {
@@ -18,3 +20,22 @@
     }
   }
 }
+
+@include mq(small) {
+  .client-list {
+    column-count: 2;
+  }
+}
+
+@include mq(medium) {
+  .client-list {
+    column-count: 3;
+  }
+}
+
+@include mq(large) {
+  .client-list {
+    column-count: 4;
+  }
+}
+
