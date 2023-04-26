@@ -13,7 +13,7 @@ import Insta from '../../assets/icons/instagram.svg';
 export class AppFooter {
   render() {
     return (
-      <footer>
+      <footer class="container">
         <hr class="rhythm-8"/>
 
         <div class="row middle-xs">
