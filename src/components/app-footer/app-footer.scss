@@ -8,6 +8,7 @@
 footer {
   .profile-pic-col {
     max-width: 200px;
+    margin-right: calc(var(--rhythm) * 5);
   }
 }
 
@@ -56,4 +57,8 @@ footer {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.contact-info {
+  padding: 0;
 }

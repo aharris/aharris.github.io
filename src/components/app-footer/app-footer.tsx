@@ -16,15 +16,15 @@ export class AppFooter {
       <footer class="container">
         <hr class="rhythm-8"/>
 
-        <div class="row middle-xs">
-          <div class="col-xs profile-pic-col">
+        <div class="row middle-xs center-xs">
+          <div class="col-xs-12 col-sm profile-pic-col rhythm-6">
             <div class="profile-pic-wrap">
               <img class="profile-pic" src="/assets/images/about/ashton.png" alt="Photo of Ashton" />
             </div>
           </div>
 
-          <div class="col-xs footer-line">
-            <ul>
+          <div class="col-xs-12 col-sm rhythm-6">
+            <ul class="contact-info">
               <li class="footer-line">
                 <a class="subtitle footer-link" href="mailto:ashton.harris@gmail.com">
                   <span class='svg-container' innerHTML={Mail}></span> ashton.harris@gmail.com
