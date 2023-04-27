@@ -55,6 +55,7 @@ export class AppClients {
           <li>Sheraton</li>
           <li>Sports Core</li>
           <li>St. Petersburg Clearwater</li>
+          <li>The American Club Resort</li>
           <li>The Children's Journey</li>
           <li>The Closet Therapy</li>
           <li>The Shawnee Inn</li>
