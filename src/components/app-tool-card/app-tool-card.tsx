@@ -7,20 +7,23 @@ import { tools } from '../../data/tools';
   styleUrl: 'app-tool-card.scss',
   shadow: false
 })
-export class AppHeader {
+export class AppToolCard {
   @Prop() tool: string;
 
   private currentTool;
 
   componentWillLoad() {
+    console.log('this.tool: ', this.tool);
+
     this.findTool(this.tool);
   }
 
   render() {
+    console.log('this.currentTool: ', this.currentTool);
     return (
       <div class="list-card">
         <div class="image-wrap">
-          <img src={this.currentTool.img} alt={this.currentTool.name} />
+          <img src={this.currentTool.img} alt={this.currentTool.name} style={{'padding': this.currentTool.padding}} />
         </div>
 
         <div class="h5 tool-name">

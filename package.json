@@ -10,6 +10,13 @@
       ],
       "extensions": "scss",
       "quiet": false
+    },
+    "update:datsa": {
+      "patterns": [
+        "src/data"
+      ],
+      "extensions": "ts",
+      "quiet": false
     }
   },
   "scripts": {
