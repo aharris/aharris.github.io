@@ -3,7 +3,7 @@ import { Work } from './../models/work.model';
 export const work: Work[] = [
   {
     name: "Carrier",
-    thumb: "assets/images/thumbs/motif.jpg",
+    thumb: "assets/images/thumbs/carrier.png",
     id: 'motif',
     image: '/assets/images/work/carrier/large.jpg',
     tools: [
