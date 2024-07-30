@@ -26,8 +26,8 @@ export class AppFooter {
           <div class="col-xs-12 col-sm rhythm-6">
             <ul class="contact-info">
               <li class="footer-line">
-                <a class="subtitle footer-link" href="mailto:ashton.harris@gmail.com">
-                  <span class='svg-container' innerHTML={Mail}></span> ashton.harris@gmail.com
+                <a class="subtitle footer-link" href="mailto:ashtonharris.me@gmail.com">
+                  <span class='svg-container' innerHTML={Mail}></span> ashtonharris.me@gmail.com
                 </a>
               </li>
               <li class="footer-line">
