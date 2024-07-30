@@ -39,17 +39,12 @@
     display: block;
     text-decoration: none;
     position: relative;
-    padding: 0 0;
+    padding: 0 0.5em;
+    border-bottom: 2px solid transparent;
 
     &:hover {
       color: var(--white);
-
-      &:before {
-        @include angle(top, 5, 2);
-      }
-      &:after {
-        @include angle(bottom, 5, 2);
-      }
+      border-bottom: 2px solid var(--white);
     }
   }
 }
@@ -63,7 +58,7 @@
     }
 
     a {
-      padding: 0 1em;
+      padding: 0 0.5em;
     }
   }
 }
