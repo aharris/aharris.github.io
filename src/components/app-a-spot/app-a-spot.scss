@@ -1,6 +1,7 @@
 @import '../../../node_modules/sass-flex-grid/index.scss';
 @import '../../global/styles/mixins';
 @import '../../global/styles/typography';
+
 .image {
   position: relative;
   margin-bottom: calc(var(--rhythm) * 10);

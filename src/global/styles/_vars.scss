@@ -5,17 +5,20 @@
   --grey-100: #f7f7f7;
   --grey-500: #0c0c0c;
   --grey-900: #1a1a1a;
+  --blue: #2980b9;
 
   // Color Usage
   --bg-color: var(--grey-500);
   --body-color: var(--grey-100);
+  --link-color: var(--blue);
 
   // Fonts
   --font-default: 'open_sansregular';
   --primary-font: 'noto_sans', 'Helvetica', 'Arial', sans-serif;
 
   // Typography
-  --body-font-size: 1rem;
+  --body-font-size: 1.3rem;
+  --subtitle-font-size: 1rem;
   --h1-font-size: 5rem; // Heading 1 font size.
   --h2-font-size: 2.5rem; // Heading 2 font size.
   --h3-font-size: 2rem; // Heading 3 font size.
