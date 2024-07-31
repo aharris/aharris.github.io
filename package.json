@@ -20,7 +20,8 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "update:styles": "touch src/global/app.scss",
-    "watch": "npm-watch"
+    "watch": "npm-watch",
+    "stencil": "stencil"
   },
   "devDependencies": {
     "@stencil/core": "2.5.2",

@@ -7,6 +7,13 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { MatchResults } from "@stencil/router";
 export namespace Components {
+    interface AppASpot {
+        "image": string;
+        "name": string;
+        "smallText": boolean;
+    }
+    interface AppBlog {
+    }
     interface AppClients {
     }
     interface AppFooter {
@@ -30,6 +37,18 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLAppASpotElement extends Components.AppASpot, HTMLStencilElement {
+    }
+    var HTMLAppASpotElement: {
+        prototype: HTMLAppASpotElement;
+        new (): HTMLAppASpotElement;
+    };
+    interface HTMLAppBlogElement extends Components.AppBlog, HTMLStencilElement {
+    }
+    var HTMLAppBlogElement: {
+        prototype: HTMLAppBlogElement;
+        new (): HTMLAppBlogElement;
+    };
     interface HTMLAppClientsElement extends Components.AppClients, HTMLStencilElement {
     }
     var HTMLAppClientsElement: {
@@ -85,6 +104,8 @@ declare global {
         new (): HTMLAppWorkDetailsElement;
     };
     interface HTMLElementTagNameMap {
+        "app-a-spot": HTMLAppASpotElement;
+        "app-blog": HTMLAppBlogElement;
         "app-clients": HTMLAppClientsElement;
         "app-footer": HTMLAppFooterElement;
         "app-header": HTMLAppHeaderElement;
@@ -97,6 +118,13 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface AppASpot {
+        "image"?: string;
+        "name"?: string;
+        "smallText"?: boolean;
+    }
+    interface AppBlog {
+    }
     interface AppClients {
     }
     interface AppFooter {
@@ -119,6 +147,8 @@ declare namespace LocalJSX {
         "match"?: MatchResults;
     }
     interface IntrinsicElements {
+        "app-a-spot": AppASpot;
+        "app-blog": AppBlog;
         "app-clients": AppClients;
         "app-footer": AppFooter;
         "app-header": AppHeader;
@@ -134,6 +164,8 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "app-a-spot": LocalJSX.AppASpot & JSXBase.HTMLAttributes<HTMLAppASpotElement>;
+            "app-blog": LocalJSX.AppBlog & JSXBase.HTMLAttributes<HTMLAppBlogElement>;
             "app-clients": LocalJSX.AppClients & JSXBase.HTMLAttributes<HTMLAppClientsElement>;
             "app-footer": LocalJSX.AppFooter & JSXBase.HTMLAttributes<HTMLAppFooterElement>;
             "app-header": LocalJSX.AppHeader & JSXBase.HTMLAttributes<HTMLAppHeaderElement>;

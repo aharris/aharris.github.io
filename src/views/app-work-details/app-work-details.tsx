@@ -16,13 +16,7 @@ export class AppWork {
   render() {
     return (
       <section class="app-work container">
-        <div class="image">
-          <h1 class="h1 work-title">
-            {this.data.name}
-          </h1>
-
-          <img src={this.data.image} alt={this.data.name} />
-        </div>
+        <app-a-spot name={this.data.name} image={this.data.image}></app-a-spot>
 
         <div class="description rhythm-9">
           <h2 class="h2">

@@ -1,0 +1,16 @@
+:host {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.blog-post {
+  opacity: .9;
+
+  &:hover {
+    opacity: 1;
+  }
+}

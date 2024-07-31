@@ -1,0 +1,26 @@
+@import '../../../node_modules/sass-flex-grid/index.scss';
+@import '../../global/styles/mixins';
+@import '../../global/styles/typography';
+.image {
+  position: relative;
+  margin-bottom: calc(var(--rhythm) * 10);
+
+  img{
+    border-radius: var(--radius);
+  }
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  top: calc(var(--rhythm) * 3);
+  padding: 1em;
+  background-color: rgba(0,0,0, .8);
+  text-decoration: none;
+  transform: skewY(-1.5deg);
+  @include h1;
+
+  &.small {
+    @include h2;
+  }
+}
