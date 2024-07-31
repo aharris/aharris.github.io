@@ -21,8 +21,9 @@ export class AppRoot {
           <stencil-router>
             <stencil-route-switch scrollTopOffset={0}>
               <stencil-route url="/" component="app-home" exact={true} />
-              <stencil-route url="/work/:name" component="app-work-details" />
-              <stencil-route url="/blog" component="app-blog" />
+              <stencil-route url="/work/:name" component="app-work-details" exact={true} />
+              <stencil-route url="/blog" component="app-blog" exact={true} />
+              <stencil-route url="/blog/offline-mode-first" component="app-blog-details" exact={true} />
             </stencil-route-switch>
           </stencil-router>
         </main>

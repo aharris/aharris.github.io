@@ -1,0 +1,9 @@
+:host {
+  display: block;
+}
+
+.blog-container {
+  background-color: var(--white);
+  color: var(--grey-900);
+  padding: calc(var(--padding) * 4);
+}

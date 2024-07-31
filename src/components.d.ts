@@ -14,6 +14,8 @@ export namespace Components {
     }
     interface AppBlog {
     }
+    interface AppBlogDetails {
+    }
     interface AppClients {
     }
     interface AppFooter {
@@ -48,6 +50,12 @@ declare global {
     var HTMLAppBlogElement: {
         prototype: HTMLAppBlogElement;
         new (): HTMLAppBlogElement;
+    };
+    interface HTMLAppBlogDetailsElement extends Components.AppBlogDetails, HTMLStencilElement {
+    }
+    var HTMLAppBlogDetailsElement: {
+        prototype: HTMLAppBlogDetailsElement;
+        new (): HTMLAppBlogDetailsElement;
     };
     interface HTMLAppClientsElement extends Components.AppClients, HTMLStencilElement {
     }
@@ -106,6 +114,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "app-a-spot": HTMLAppASpotElement;
         "app-blog": HTMLAppBlogElement;
+        "app-blog-details": HTMLAppBlogDetailsElement;
         "app-clients": HTMLAppClientsElement;
         "app-footer": HTMLAppFooterElement;
         "app-header": HTMLAppHeaderElement;
@@ -124,6 +133,8 @@ declare namespace LocalJSX {
         "smallText"?: boolean;
     }
     interface AppBlog {
+    }
+    interface AppBlogDetails {
     }
     interface AppClients {
     }
@@ -149,6 +160,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "app-a-spot": AppASpot;
         "app-blog": AppBlog;
+        "app-blog-details": AppBlogDetails;
         "app-clients": AppClients;
         "app-footer": AppFooter;
         "app-header": AppHeader;
@@ -166,6 +178,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "app-a-spot": LocalJSX.AppASpot & JSXBase.HTMLAttributes<HTMLAppASpotElement>;
             "app-blog": LocalJSX.AppBlog & JSXBase.HTMLAttributes<HTMLAppBlogElement>;
+            "app-blog-details": LocalJSX.AppBlogDetails & JSXBase.HTMLAttributes<HTMLAppBlogDetailsElement>;
             "app-clients": LocalJSX.AppClients & JSXBase.HTMLAttributes<HTMLAppClientsElement>;
             "app-footer": LocalJSX.AppFooter & JSXBase.HTMLAttributes<HTMLAppFooterElement>;
             "app-header": LocalJSX.AppHeader & JSXBase.HTMLAttributes<HTMLAppHeaderElement>;
