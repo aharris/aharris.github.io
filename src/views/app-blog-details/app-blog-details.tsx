@@ -1,4 +1,6 @@
 import { Component, Host, h } from '@stencil/core';
+import Prism from 'prismjs';
+import 'prismjs/components/prism-dart.js';
 
 @Component({
   tag: 'app-blog-details',
@@ -6,6 +8,14 @@ import { Component, Host, h } from '@stencil/core';
   shadow: false,
 })
 export class AppBlogDetails {
+  private _html: string = '';
+
+  componentWillRender() {
+    this._html = Prism.highlight(`
+import { Injectable } from '@nestjs/common';
+import { faker } from '@faker-js/faker';
+      `, Prism.languages.dart, 'dart');
+  }
 
   render() {
     return (
@@ -75,6 +85,8 @@ export class AppBlogDetails {
               <p>
                 We are going to use the Flutter CLI to create the App: <a href="https://docs.flutter.dev/reference/flutter-cli" target='_blank'>https://docs.flutter.dev/reference/flutter-cli</a>
               </p>
+
+              <pre><code class="language-dart" innerHTML={this._html}></code></pre>
             </div>
           </div>
 

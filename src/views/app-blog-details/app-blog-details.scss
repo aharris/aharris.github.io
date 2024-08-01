@@ -1,6 +1,7 @@
 @import '../../../node_modules/sass-flex-grid/index.scss';
 @import '../../global/styles/mixins';
 @import '../../global/styles/typography';
+@import '../../../node_modules/prismjs/themes/prism.css';
 
 :host {
   display: block;
@@ -10,6 +11,8 @@
   background-color: var(--white);
   padding: calc(var(--padding) * 4);
   margin-top: calc(var(--rhythm) * 11 * -1);
+  color: var(--grey-900);
+
 
   h2 {
     @include h2;
