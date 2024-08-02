@@ -242,6 +242,26 @@ body: Stack(
               <time class="date">
                 Aug 2, 2024
               </time>
+
+              <h2>
+              TLDR:
+
+              </h2>
+              <ul>
+                <li>"Offline Mode First" improves percieved performance by caching data for offline and online use.</li>
+                <li>It ensures instant access to essential information, even with poor or no internet connectivity.</li>
+                <li>It enhances the user experience with immediate data access and background updates.</li>
+              </ul>
+
+
+              <br />
+              <br />
+
+              <hr />
+
+              <br />
+              <br />
+
               <p>
                 In todays digital ecosystem we are very lucky to have fairly reliable internet connectivity in many parts of the world.
                 However, this is not always the case for the user base of our applications. Take a construction worker building in a rural location, for example.
@@ -336,13 +356,13 @@ body: Stack(
                 Now we are going to make a few updates to this API to ensure we can see when changes are happening.
                 <br />
                 <br />
-                First let's install a dependency to allow us to generate fake data on the fly, faker.js.
+                First, let's install a dependency to allow us to generate fake data on the fly, <a href="https://www.npmjs.com/package/@faker-js/faker" target='_blank'>faker.js</a>.
               </p>
 
               <pre><code class="language-bash" innerHTML={this._codeExamples[3]}></code></pre>
 
               <p>
-                Then, open app.service.ts and update to match the following:
+                Then, open <code>app.service.ts</code> and update to match the following:
               </p>
 
               <pre><code class="language-dart" innerHTML={this._codeExamples[4]}></code></pre>
@@ -367,7 +387,7 @@ body: Stack(
               <pre><code class="language-bash" innerHTML={this._codeExamples[5]}></code></pre>
 
               <p>
-                Then we are going to make create a new directory called services and put a new file in it calls api_service.dart.
+                Then we are going to make create a new directory called <code>services</code> and put a new file in it called <code>api_service.dart</code>.
                 <br />
                 <br />
                 In this new file add the following:
@@ -376,7 +396,7 @@ body: Stack(
               <pre><code class="language-dart" innerHTML={this._codeExamples[6]}></code></pre>
 
               <p>
-                Then in main.dart we are going to find the body Widget and replace it with the following:
+                Then in <code>main.dart</code> we are going to find the body Widget and replace it with:
               </p>
 
               <pre><code class="language-dart" innerHTML={this._codeExamples[7]}></code></pre>
@@ -418,7 +438,7 @@ body: Stack(
                 Then in order to store this data we will do the following:
                 <br/>
                 <br/>
-                Create a new file in services directory called `sembast_service.dart`.
+                Create a new file in <code>services</code> directory called  <code>sembast_service.dart</code>.
                 <br/>
                 <br/>
                 Here we are going to initialize the DB:
@@ -427,22 +447,22 @@ body: Stack(
               <pre><code class="language-dart" innerHTML={this._codeExamples[9]}></code></pre>
 
               <p>
-                Once that is created we can call this init method in <code>main.dart</code> to get it started.
+                Once that is created we can call this <code>init</code> method in <code>main.dart</code> to get it started.
                 <br/>
                 <br/>
-                Replace the <code>main()</code> method with the following.
+                Replace the <code>main()</code> method with the following:
               </p>
 
               <pre><code class="language-dart" innerHTML={this._codeExamples[10]}></code></pre>
 
               <p>
-                Finally we will go back to our <code>api_service.dart</code> to update our <code>getHello</code> Method:
+                Finally we will go back to our <code>api_service.dart</code> to update our <code>getHello</code> method:
               </p>
 
               <pre><code class="language-dart" innerHTML={this._codeExamples[11]}></code></pre>
 
               <p>
-                We have added a call to store the response.data on the users device with Sembast.
+                We have added a call to store the <code>response.data</code> on the users device with Sembast.
                 <br/>
                 <br/>
                 If you now open the db file that was created you should see this:
@@ -467,7 +487,7 @@ body: Stack(
                 To do this we will:
                 <br/>
                 <br/>
-                Convert the <code>getHello</code> method to a stream. Then, instead of returning the api call, we will <code>yield</code> the stored data first and then yield the actual response once it comes in.
+                Convert the <code>getHello</code> method to a stream. Then, instead of returning the api call, we will <code>yield</code> the stored data first and then <code>yield</code> the actual response once it comes in.
               </p>
 
               <pre><code class="language-dart" innerHTML={this._codeExamples[14]}></code></pre>
@@ -494,7 +514,7 @@ body: Stack(
                 One way to do this is with the <code>onDone</code> method available when listening to a stream.
                 <br/>
                 <br/>
-                Then we can update our listener to update this value <code>onDone</code>:
+                Then, we can update our listener to update this value <code>onDone</code>:
               </p>
 
               <pre><code class="language-dart" innerHTML={this._codeExamples[17]}></code></pre>
@@ -509,7 +529,7 @@ body: Stack(
               <pre><code class="language-dart" innerHTML={this._codeExamples[18]}></code></pre>
 
               <p>
-                You will notice that we have now wrapped our body content in a Stack in order to position our message at the bottom of the screen with `Positioned`. We have also added the Visibility widget to only show this loading message when _done  is false.
+                You will notice that we have now wrapped our body content in a <code>Stack</code> in order to position our message at the bottom of the screen with <code>Positioned</code>. We have also added the <code>Visibility</code> widget to only show this loading message when <code>_done</code>  is false.
                 <br/>
                 <br/>
                 You should now have a view that looks like this while loading:
@@ -536,7 +556,7 @@ body: Stack(
                 That is the beauty and benefit of Offline Mode First!
                 <br/>
                 <br/>
-                Get The full working demo here: <a href="https://github.com/aharris/offline_mode_first_app">https://github.com/aharris/offline_mode_first_app</a>
+                Get The full working demo here: <a href="https://github.com/aharris/offline_mode_first_app" target="_blank">https://github.com/aharris/offline_mode_first_app</a>
               </p>
             </div>
           </div>
