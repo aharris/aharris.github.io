@@ -10,8 +10,9 @@
 .blog-container-wrapper {
   background-color: var(--white);
   padding: calc(var(--padding) * 4);
-  margin-top: calc(var(--rhythm) * 11 * -1);
+  margin-top: calc(var(--rhythm) * 12 * -1);
   color: var(--grey-900);
+  border-radius: var(--radius);
 
 
   h2 {
@@ -29,6 +30,13 @@
 
     text-indent: calc(var(--padding) * 2);
   }
+
+  .date {
+    color: var(--subtext-color);
+    display: block;
+    text-align: right;
+  }
+
 
   a {
     color: var(--link-color);

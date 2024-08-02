@@ -239,6 +239,9 @@ body: Stack(
 
           <div class="blog-container-wrapper">
             <div class="blog-container">
+              <time class="date">
+                Aug 2, 2024
+              </time>
               <p>
                 In todays digital ecosystem we are very lucky to have fairly reliable internet connectivity in many parts of the world.
                 However, this is not always the case for the user base of our applications. Take a construction worker building in a rural location, for example.
