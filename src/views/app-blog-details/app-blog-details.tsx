@@ -1,6 +1,7 @@
 import { Component, Host, h } from '@stencil/core';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-dart.js';
+import 'prismjs/components/prism-bash.js';
 
 @Component({
   tag: 'app-blog-details',
@@ -8,13 +9,85 @@ import 'prismjs/components/prism-dart.js';
   shadow: false,
 })
 export class AppBlogDetails {
-  private _html: string = '';
+  private _codeExamples: string[] = [];
 
   componentWillRender() {
-    this._html = Prism.highlight(`
+    this._codeExamples[0] = Prism.highlight(`
+$ flutter create offline_mode_first_app
+      `, Prism.languages.bash, 'bash');
+
+    this._codeExamples[1] = Prism.highlight(`
+$ cd offline_mode_first_app
+$ flutter run
+      `, Prism.languages.bash, 'bash');
+
+    this._codeExamples[2] = Prism.highlight(`
+$ nest new api
+$ cd api
+$ npm run start:dev
+      `, Prism.languages.bash, 'bash');
+
+      this._codeExamples[3] = Prism.highlight(`
+$ npm install --save @faker-js/faker
+      `, Prism.languages.bash, 'bash');
+
+      this._codeExamples[4] = Prism.highlight(`
 import { Injectable } from '@nestjs/common';
 import { faker } from '@faker-js/faker';
+
+@Injectable()
+export class AppService {
+  async getHello(): Promise<string> {
+    return await new Promise<string>((resolve) => {
+      setTimeout(() => {
+        resolve(\`Hello \${faker.person.firstName()}\`);
+      }, 3000);
+    });
+  }
+}
       `, Prism.languages.dart, 'dart');
+
+      this._codeExamples[5] = Prism.highlight(`
+$ flutter pub add dio
+      `, Prism.languages.bash, 'bash');
+
+      this._codeExamples[6] = Prism.highlight(`
+import 'package:dio/dio.dart';
+
+class ApiService {
+  final dio = Dio();
+
+  Future<String> getHello() async {
+    final response = await dio.get('http://localhost:3000');
+
+    return response.data;
+  }
+}
+        `, Prism.languages.dart, 'dart');
+
+        this._codeExamples[7] = Prism.highlight(`
+body: Center(
+  // Center is a layout widget. It takes a single child and positions it
+  // in the middle of the parent.
+  child: FutureBuilder<String>(
+    future: ApiService().getHello(),
+    builder: (context, snapshot) {
+      if (snapshot.connectionState == ConnectionState.done) {
+        return Text(
+          snapshot.data!,
+          style: Theme.of(context).textTheme.bodyMedium,
+        );
+      } else {
+        return const CircularProgressIndicator();
+      }
+    },
+  ),
+),
+        `, Prism.languages.dart, 'dart');
+  }
+
+  componentDidRender() {
+    Prism.highlightAll();
   }
 
   render() {
@@ -86,7 +159,91 @@ import { faker } from '@faker-js/faker';
                 We are going to use the Flutter CLI to create the App: <a href="https://docs.flutter.dev/reference/flutter-cli" target='_blank'>https://docs.flutter.dev/reference/flutter-cli</a>
               </p>
 
-              <pre><code class="language-dart" innerHTML={this._html}></code></pre>
+              <pre><code class="language-bash" innerHTML={this._codeExamples[0]}></code></pre>
+
+              <p>
+                Now we can start the App:
+              </p>
+
+              <pre><code class="language-bash" innerHTML={this._codeExamples[1]}></code></pre>
+
+              <h2>
+                Creating the API
+              </h2>
+
+              <p>
+                Install the nest CLI tools: <a href="https://docs.nestjs.com/cli/overview" target='_blank'>https://docs.nestjs.com/cli/overview</a>
+
+                <br/>
+                <br/>
+
+                Inside your app directory run the following commands to create and run the API:
+              </p>
+
+              <pre><code class="language-bash" innerHTML={this._codeExamples[2]}></code></pre>
+
+              <p>
+                Navigate to <code>localhost:3000</code> and you will see "Hello World".
+                <br/>
+                <br/>
+                Awesome!
+                <br/>
+                <br/>
+                Now we are going to make a few updates to this API to ensure we can see when changes are happening.
+                <br/>
+                <br/>
+                First let's install a dependency to allow us to generate fake data on the fly, faker.js.
+              </p>
+
+              <pre><code class="language-bash" innerHTML={this._codeExamples[3]}></code></pre>
+
+              <p>
+                Then, open app.service.ts and update to match the following:
+              </p>
+
+              <pre><code class="language-dart" innerHTML={this._codeExamples[4]}></code></pre>
+
+              <p>
+                This sets a 3 second delay on the API request to mimic real world situations. It also replaces "World" with a random first name so we can see when new data loads.
+
+                Go ahead and refresh <code>localhost:3000</code> and after 3 seconds each time you should see a new name.
+              </p>
+
+              <h2>
+                Making the API Call
+              </h2>
+
+              <p>
+                Now that our API is set up it is time to go back to our flutter app and use it!
+                <br/>
+                <br/>
+                To Make the APi calls we are going to use Dio (https://pub.dev/packages/dio)
+              </p>
+
+              <pre><code class="language-bash" innerHTML={this._codeExamples[5]}></code></pre>
+
+              <p>
+                Then we are going to make create a new directory called services and put a new file in it calls api_service.dart.
+                <br/>
+                <br/>
+                In this new file add the following:
+              </p>
+
+              <pre><code class="language-dart" innerHTML={this._codeExamples[6]}></code></pre>
+
+              <p>
+                Then in main.dart we are going to find the body Widget and replace it with the following:
+              </p>
+
+              <pre><code class="language-dart" innerHTML={this._codeExamples[7]}></code></pre>
+
+              <p>
+                Now, every time we refresh our app we will get a loading indicator for 3 seconds until our API call finishes. Then we will see our expected data from our API:
+              </p>
+
+              <div class="image-wrapper">
+                <img src="/assets/images/blog_posts/offline_mode_first/example_1.png" alt="iPhone with Hello and a generated name" />
+              </div>
             </div>
           </div>
 
